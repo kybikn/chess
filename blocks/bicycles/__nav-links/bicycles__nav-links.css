@@ -1,0 +1,10 @@
+.bicycles__nav-links {
+  padding: 0;
+  margin: 17px 0 0;
+}
+
+@media screen and (max-width: 590px) {
+  .bicycles__nav-links {
+    display: none;
+  }
+}

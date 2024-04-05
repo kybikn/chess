@@ -1,0 +1,28 @@
+.bicycles__img {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.14);
+  transition: 0.5s;
+  cursor: pointer;
+  background: #f4f4f4;
+}
+
+.bicycles__img:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1030px) {
+  .bicycles__img {
+    object-fit: contain;
+    max-width: 254px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .bicycles__img {
+    padding: 15px 15px 37px;
+    margin-bottom: 0;
+  }
+}

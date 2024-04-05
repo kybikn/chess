@@ -1,0 +1,17 @@
+.bicycles__nav-link {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #222222;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 860px) {
+  .bicycles__nav-link {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}

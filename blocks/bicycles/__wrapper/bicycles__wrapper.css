@@ -1,0 +1,8 @@
+@media screen and (max-width: 840px) {
+  .bicycles__wrapper {
+    height: 305px;
+    width: 284px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}

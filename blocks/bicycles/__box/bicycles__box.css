@@ -1,0 +1,32 @@
+.bicycles__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 920px) {
+  .bicycles__box {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .bicycles__box {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+}

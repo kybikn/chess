@@ -1,0 +1,28 @@
+.bicycles__card {
+  padding-top: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.bicycles__card:hover .bicycles__text-link {
+  color: #24b473;
+}
+
+@media screen and (max-width: 1280px) {
+  .bicycles__card {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .bicycles__card {
+    padding-top: 0;
+    opacity: 0;
+    position: absolute;
+  }
+}

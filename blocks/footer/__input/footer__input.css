@@ -1,0 +1,20 @@
+.footer__input {
+  margin-bottom: 100px;
+  padding: 0 0 0 20px;
+  height: 50px;
+  width: 340px;
+  box-sizing: border-box;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  border-radius: 4px;
+  cursor: pointer;
+  background: #efefef;
+}
+
+@media screen and (max-width: 590px) {
+  .footer__input {
+    margin-bottom: 99px;
+    padding-left: 0;
+    height: 50px;
+    width: 284px;
+  }
+}

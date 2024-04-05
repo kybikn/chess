@@ -1,0 +1,14 @@
+.merks__quote-author {
+  margin: 0 0 4px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 320px) {
+  .merks__quote-author {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

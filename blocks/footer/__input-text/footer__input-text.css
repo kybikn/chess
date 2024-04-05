@@ -1,0 +1,13 @@
+.footer__input-text {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__input-text {
+    padding-left: 20px;
+  }
+}

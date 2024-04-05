@@ -1,0 +1,11 @@
+.hamburger__line {
+  display: block;
+  width: 22px;
+  height: 3px;
+  background-color: #151515;
+  margin-bottom: 5px;
+}
+
+.hamburger__line:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,22 @@
+.bicycles__text-link {
+  margin: 0 0 0 5px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #151515;
+}
+
+@media screen and (max-width: 840px) {
+  .bicycles__text-link {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 15px;
+    z-index: 1;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    margin-left: 0;
+  }
+}

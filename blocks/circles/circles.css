@@ -1,0 +1,27 @@
+@media screen and (max-width: 840px) {
+  .circles {
+    width: 22px;
+    height: 10px;
+    padding-top: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    gap: 5px;
+    margin-top: 18px;
+  }
+
+  .circles__dot:hover,
+  #slide1:checked ~ .circles .circles__dot:nth-of-type(1),
+  #slide2:checked ~ .circles .circles__dot:nth-of-type(2),
+  #slide3:checked ~ .circles .circles__dot:nth-of-type(3) {
+    background: #151515;
+  }
+
+  #slide1:checked ~ .bicycles__box > .slide1,
+  #slide2:checked ~ .bicycles__box > .slide2,
+  #slide3:checked ~ .bicycles__box > .slide3 {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

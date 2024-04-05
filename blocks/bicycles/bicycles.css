@@ -1,0 +1,21 @@
+.bicycles {
+  padding: 60px 120px 65px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 590px) {
+  .bicycles {
+    padding: 80px 18px 65px;
+  }
+
+  .bicycles::before {
+    content: "";
+    width: 284px;
+    position: absolute;
+    top: 40px;
+    right: 18px;
+    bottom: 0;
+    left: 18px;
+    border-top: 1px solid #e3e3e3;
+  }
+}

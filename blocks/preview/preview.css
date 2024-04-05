@@ -1,0 +1,30 @@
+.preview {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: -webkit-min-content 1fr;
+  -ms-grid-rows: min-content 1fr;
+  grid-template-rows: -webkit-min-content 1fr;
+  grid-template-rows: min-content 1fr;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+@media screen and (max-width: 1068px) {
+  .preview {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .preview {
+    padding-bottom: 40px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, -webkit-min-content);
+    grid-template-rows: repeat(3, min-content);
+  }
+}

@@ -1,0 +1,11 @@
+.bicycles__nav-li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 37px;
+}
+
+@media screen and (max-width: 860px) {
+  .bicycles__nav-li {
+    padding-left: 12px;
+  }
+}

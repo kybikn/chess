@@ -1,0 +1,28 @@
+.preview__img {
+  padding-top: 19px;
+  max-width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  grid-row: 1 / -1;
+  -ms-grid-column-align: end;
+  justify-self: end;
+}
+
+@media screen and (max-width: 1068px) {
+  .preview__img {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .preview__img {
+    width: 254px;
+    padding: 40px 18px 0 48px;
+  }
+}
