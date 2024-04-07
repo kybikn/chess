@@ -3,7 +3,7 @@
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #E9DED4; 
+  background-color: #FFFFFF; 
   color: #313131;
   scroll-behavior: smooth;
   font-family: "Inter", Arial, sans-serif;
@@ -408,4 +408,90 @@ right: 130px;
   height: 6px;
   border-radius: 50%;
   background-color: #FFFFFF;
+}
+
+/* -------------tournament------------ */
+.tournament {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 42px;
+  gap: 20px;
+}
+
+.flex {
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  gap: 50px;
+}
+
+.flex2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tournament-title {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  line-height: 48.6px;
+  font-weight: 400;
+}
+
+.tournament-span {
+  font-weight: 700;
+  color: #F54932;
+}
+
+table {
+  border-collapse: collapse;
+  width: 704px;
+  margin: 40px 0 30px 0;
+}
+
+tbody {
+  box-sizing: border-box;
+  border: 3px solid white;
+}
+
+td {
+  border: 2px solid #D0D0D0;
+}
+
+.table-title {
+  font-family: "GolosText", serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 15px 0;
+  width: 300px;
+}
+
+.table-text {
+  font-family: "GolosText", serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 15px 0 15px 15px;
+}
+
+.table-text-span {
+  text-decoration: line-through; 
+  color: #F54932;
+}
+
+.table-text-black {
+  color: #313131;
+  padding-right: 10px;
+}
+
+.tournament-text {
+  margin: 0;
+  font-family: "GolosText", serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #3057A2;
 }
