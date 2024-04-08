@@ -425,6 +425,9 @@ right: 130px;
   gap: 50px;
 }
 
+.flex-mob {
+  display: none;
+}
 .flex2 {
   display: flex;
   align-items: center;
@@ -439,24 +442,23 @@ right: 130px;
   line-height: 48.6px;
   font-weight: 400;
 }
-
 .tournament-span {
   font-weight: 700;
   color: #F54932;
 }
 
-table {
+.table {
   border-collapse: collapse;
   width: 704px;
   margin: 40px 0 30px 0;
 }
 
-tbody {
+.table-box {
   box-sizing: border-box;
   border: 3px solid white;
 }
 
-td {
+.table-column {
   border: 2px solid #D0D0D0;
 }
 
@@ -467,6 +469,7 @@ td {
   font-weight: 400;
   padding: 15px 0;
   width: 300px;
+  opacity: 70%;
 }
 
 .table-text {
@@ -495,3 +498,109 @@ td {
   font-weight: 400;
   color: #3057A2;
 }
+
+
+@media (max-width: 375px) {
+  .tournament {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+  }
+
+  .flex {
+    flex-direction: column;
+    padding: 0 10px;
+    display: none;
+  }
+
+  .flex-mob{
+    flex-direction: column;
+    padding: 0 10px;
+    display: flex;
+  }
+
+  .rev {
+    margin-bottom: 22px;
+  }
+
+  .revimg {
+    margin-bottom: 25px;
+  }
+
+  .flex2 {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .tournament-title {
+    width: 330px;
+    font-size: 28px;
+    line-height: 37.8px;
+  }
+
+  .tournament-title2 {
+    padding-left: 8px;
+  }
+
+  .tournament-img {
+    width: 335px;
+    height: 212px;
+  }
+
+  .Bender-img {
+    width: 375px;
+    }
+
+    .table {
+     width: 335px;
+     margin: 30px 0 22px 0;
+    }
+
+   .table-row {
+     display: flex;
+     flex-direction: column;
+     border-bottom: 2px solid #D0D0D0;
+    }
+
+ .table-column {
+      border: 0;
+    }
+
+    .table-title {
+      width: 290px;
+      padding: 15px 0 12px;
+    }
+
+    .table-text {
+      padding: 0 0 15px;
+    }
+
+  .table-row:last-of-type {
+      border: 0;
+    }
+
+    .nowrap {
+      flex-direction: row;
+    }
+
+    .nowrap-title {
+      width: 152px;
+    }
+
+    .nowrap-center {
+      padding: 15px 0;
+    }
+
+    .tournament-text {
+      padding: 0 0 0 2px;
+      font-size: 18px;
+      line-height: 21.6px;
+    }
+
+    .table-text-black {
+      padding-right: 7px;
+    }
+}
+
+
+
