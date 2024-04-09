@@ -854,19 +854,10 @@ right: 130px;
 /* -------------------participants------------------- */
 .participants {
   padding: 120px 75px;
-  /* position: relative; */
-}
-
-.stages-title-box {
-  width: 806px;
-  height: 130px;
-  margin: 0 0 55px 0;
+  position: relative;
 }
 
 .participants-title {
-  /* width: 806px;
-  height: 130px; */
-  /* display: inline; */
   margin: 0 0 60px 0;
   text-transform: uppercase;
   font-family: "Merriweather", serif;
@@ -874,20 +865,36 @@ right: 130px;
   line-height: 64.8px;
   font-weight: 400;
 }
+
 .cards {
   display: flex;
-  align-items: center;
+  text-align: center;
   justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
+  /* overflow: hidden; */
 }
+
 .cards__item {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+}
+/* .cards_item {
+  display: none;
+  position: relative;
+}
+
+.cards_item.active {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .cards__image {
   background-image: url(../images/bg.png);
@@ -898,22 +905,27 @@ right: 130px;
   border-radius: 50%;
   width: 320px;
   height: 320px;
-  margin: 0 0 30px 0;
+  margin: 0 0 28px 0;
 }
+
 .cards__title {
-  margin: 0 0 10px 0;
+  margin: 0 0 6px 0;
+  text-align: center;
   font-family: "GolosText", serif;
   font-size: 24px;
   line-height: 28.8px;
   font-weight: 600;
 }
+
 .cards__description {
-  margin: 0 0 20px 0;
+  margin: 0 0 22px 0;
+  text-align: center;
   font-family: "GolosText", serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
 }
+
 .button-cards {
   font-family: "GolosText", serif;
   font-size: 16px;
@@ -931,89 +943,61 @@ right: 130px;
 }
 
 
-/* ------------------------ */
-.video__slider_box {
-  display: flex;
-  align-items: center;
-  margin: 25px auto 0;
-  width: 178px;
-  height: 36px;
-  gap: 16px;
-}
-
-.video__slider_circles {
-  width: 74px;
-  height: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  /* margin-top: 30px; */
-}
-
-.slider_circle {
-  height: 10px;
-  width: 10px;
-  background: #D9D9D9;
-  border-radius: 50%;
-  transition: 1s;
-  cursor: pointer;
-}
-.slider_circle:hover {
-  background: #710707;
-}
-
-.active {
-  background:#313131;
-}
-
-.gallery-btn {
-  padding: 0;
-  width: 36px;
-  height: 36px;
-  border: none;
-  border-radius: 50%;
-  background-color: #313131;
-  opacity: 20%;
-  position: relative;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.gallery-btn:hover {
-  background-color: #FBCE51;
-}
-
-  .gallery-btn_direction_left::before {
-    content: "";
-    background: url(../images/arrow-left.svg) no-repeat center;
+  .slider__container {
+    margin: 130px 40px 0 0;
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
-    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 178px;
+    gap: 10px;
   }
-
-  .gallery-btn_direction_right::before {
-    content: "";
-    background: url(../images/arrow-right.svg) no-repeat center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
+  
   .slider_page-number {
     display: flex;
-    color: #ffffff;
-    font-size: 22px;
-    line-height: 40px;
-    gap: 0 10px;
-    font-family: 'Roboto';
-    font-style: normal;
+    gap: 5px;
+  }
+  
+  .page-number {
+    margin: 0;
+    font-family: "GolosText", serif;
+    font-size: 16px;
+    line-height: 19.2px;
     font-weight: 400;
-    /* user-select: none; */
+    color:#313131;
   }
 
+  .slider-squares {
+    display: none;
+  }
   
+  .slider_arrow-left {
+    height: 44px;
+    width: 44px;
+    background-image: url('../images/arrow-left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #313131;
+    transition: 0.5s;
+  }
+  
+  .slider_arrow-right {
+    height: 44px;
+    width: 44px;
+    background-image: url('../images/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #313131;
+    transition: 0.5s;
+  }
+
+ 

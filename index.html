@@ -168,44 +168,42 @@
 
       <section class="participants">
         <h2 class="participants-title">Участники турнира</h2>
-        <!-- <div class="video__slider_box">
-          <div>
-            <button class="gallery-btn gallery-btn_direction_left"></button>
-          </div>
-          <div class="video__slider_circles">
-            <span class="slider_circle active" data-circle="0"></span>
-            <span class="slider_circle" data-circle="1"></span>
-            <span class="slider_circle" data-circle="2"></span>
-            <span class="slider_circle" data-circle="3"></span>
-            <span class="slider_circle" data-circle="4"></span>
-          </div>
-          <div>
-            <button class="gallery-btn gallery-btn_direction_right active"></button>
-          </div>
-        </div> -->
-
-
-
+        <!-- <div class="cards__slider"> -->
         <ul class="cards">
-          <li class="cards__item">
+          <li class="cards_item active">
             <img src="./images/person.png" alt="" class="cards__image">
             <h4 class="cards__title">Хозе-Рауль Капабланка</h4>
             <p class="cards__description">Чемпион мира по шахматам</p>
             <a href="#" class="button-cards">Подробнее</a>
           </li>
-          <li class="cards__item">
+          <li class="cards_item">
             <img src="./images/person.png" alt="" class="cards__image">
             <h4 class="cards__title">Эммануил Ласкер</h4>
             <p class="cards__description">Чемпион мира по шахматам</p>
             <a href="#" class="button-cards">Подробнее</a>
           </li>
-          <li class="cards__item">
+          <li class="cards_item">
             <img src="./images/person.png" alt="" class="cards__image">
             <h4 class="cards__title">Александр Алехин</h4>
             <p class="cards__description">Чемпион мира по шахматам</p>
             <a href="#" class="button-cards">Подробнее</a>
           </li>
         </ul>
+        <!-- </div> -->
+        <div class="slider__container">
+          <button class="slider_arrow-left"></button>
+          <div class="slider_page-number">
+            <p class="page-number first">3</p>
+            <p class="page-number delimiter">/</p>
+            <p class="page-number second">6</p>
+          </div>
+          <div class="slider-squares">
+            <span class="slider-square active"></span>
+            <span class="slider-square"></span>
+            <span class="slider-square"></span>
+          </div>
+          <button class="slider_arrow-right"></button>
+        </div>
       </section>
     </main>
     <footer class="footer"></footer>
