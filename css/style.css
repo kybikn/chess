@@ -809,9 +809,9 @@ right: 130px;
     background: #710707;
   }
   
-  .active {
+  /* .active {
     background:#313131;
-  }
+  } */
   
   .gallery-btn {
     padding: 0;
@@ -858,7 +858,7 @@ right: 130px;
 }
 
 .participants-title {
-  margin: 0 0 60px 0;
+  margin: 0 0 62px 0;
   text-transform: uppercase;
   font-family: "Merriweather", serif;
   font-size: 54px;
@@ -868,33 +868,25 @@ right: 130px;
 
 .cards {
   display: flex;
+  /* gap: 100px; */
+
   text-align: center;
   justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
+  height: 462px;
 }
 
 .cards__item {
-  display: flex;
-  flex-direction: column;
-  /* margin: 0 auto; */
-  /* text-align: center; */
-  justify-content: center;
-  align-items: center;
-}
-/* .cards_item {
-  display: none;
-  position: relative;
-}
-
-.cards_item.active {
+  /* padding: 0 37px; */
+  /* width: 394px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+}
 
 .cards__image {
   background-image: url(../images/bg.png);
@@ -905,7 +897,7 @@ right: 130px;
   border-radius: 50%;
   width: 320px;
   height: 320px;
-  margin: 0 0 28px 0;
+  margin: 0 43px 25px;
 }
 
 .cards__title {
@@ -918,7 +910,7 @@ right: 130px;
 }
 
 .cards__description {
-  margin: 0 0 22px 0;
+  margin: 0 0 25px 0;
   text-align: center;
   font-family: "GolosText", serif;
   font-size: 20px;
@@ -931,7 +923,7 @@ right: 130px;
   font-size: 16px;
   line-height: 20.8px;
   font-weight: 500;
-  padding: 5px 10px;
+  padding: 6px 10px;
   border-radius: 62px;
   max-width: 113px;
   text-decoration: none;
@@ -1000,4 +992,58 @@ right: 130px;
     transition: 0.5s;
   }
 
- 
+  @media (max-width: 375px) {
+    .participants {
+      padding: 55px 20px;
+      /* position: relative; */
+    }
+    
+    .participants-title {
+      margin: 0;
+      font-size: 36px;
+      line-height: 39.6px;
+    }
+
+    .cards {
+      overflow: hidden;
+    }
+
+    .cards__image {
+      width: 244px;
+      height: 244px;
+      margin: 0 0 32px 0;
+    }
+    
+    .cards__description {
+      margin: 0 0 20px 0;
+    }
+
+    .button-cards {
+      line-height: 19.2px;
+    }
+
+    .cards_item {
+      display: none;
+    }
+    
+    .cards_item.active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slider__container {
+      margin: 600px 75px 0 0;
+    }
+    
+    .slider_arrow-left {
+      height: 36px;
+      width: 36px;
+    }
+    
+    .slider_arrow-right {
+      height: 36px;
+      width: 36px;
+    }
+  }
