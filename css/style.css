@@ -22,13 +22,16 @@
   position: relative;
   overflow: hidden;
   height: 100vh;
-  max-height: 760px;
+  max-height: 700px;
+  /* max-height: 760px; */
 }
 
 @media (max-width: 375px) {
   .header {
-    height: 812px;
-    max-height: 812px;
+    /* height: 812px;
+    max-height: 812px; */
+      height: 774px;
+    max-height: 774px;
   }
 }
 
@@ -193,7 +196,8 @@ margin-left: 33px;
 .ellipse {
   position: absolute;
   z-index: 1;
-  bottom: 140px;
+  /* bottom: 140px; */
+  bottom: 80px;
   right: 310px;
   background-blend-mode: color-burn;
 }
@@ -206,7 +210,8 @@ margin-left: 33px;
 
 @media (max-width: 375px) {
   .ellipse{
-    bottom: 104px;
+    /* bottom: 104px; */
+    bottom: 66px;
     width: 295px;
     height: 285px; 
     right: 50px;
@@ -216,7 +221,8 @@ margin-left: 33px;
 .letters {
   position: absolute;
   z-index: 1;
-  bottom: 80px;
+  /* bottom: 80px; */
+  bottom: 20px;
   right: 250px;
   mix-blend-mode: darken;
 }
@@ -230,7 +236,8 @@ margin-left: 33px;
 @media (max-width: 375px) {
   .letters {
     right: 25px;
-    bottom: 77px;
+    /* bottom: 77px; */
+    bottom: 39px;
     width: 345px;
     height: 310px; 
   }
@@ -239,7 +246,8 @@ margin-left: 33px;
 .king {
   position: absolute;
   z-index: 3;
-  bottom: 225px;
+  /* bottom: 225px; */
+  bottom: 165px;
   right: 780px;
 }
 
@@ -253,14 +261,16 @@ margin-left: 33px;
   .king {
     right: 255px;
     height: 117px;
-    bottom: 153px;
+    /* bottom: 153px; */
+    bottom: 115px;
   }
 }
 
 .queen {
   position: absolute;
   z-index: 3;
-  bottom: 330px;
+  /* bottom: 330px; */
+  bottom: 270px;
   right: 430px;
 }
 
@@ -273,7 +283,8 @@ margin-left: 33px;
 @media (max-width: 375px) {
   .queen{
     height: 105px;
-    bottom: 207px;
+    /* bottom: 207px; */
+    bottom: 169px;
     right: 88px;
     rotate: 10deg;
   }
@@ -282,7 +293,8 @@ margin-left: 33px;
 .city {
   position: absolute;
   z-index: 4;
-  bottom: 60px;
+  bottom: 0;
+  /* bottom: 60px; */
   right: 135px;
 }
 
@@ -297,14 +309,16 @@ margin-left: 33px;
     height: 247px;
     width: 885px;
     right: -110px;
-    bottom: 30px;
+    /* bottom: 30px; */
+    bottom: -8px;
   }
 }
 
 .city-border {
   position: absolute;
   z-index: 5;
-  bottom: 60px;
+  bottom: 0;
+  /* bottom: 60px; */
   right: 155px;
 }
 
@@ -319,14 +333,16 @@ margin-left: 33px;
     right: -100px;
     height: 247px;
     width: 885px;
-    bottom: 34px;
+    /* bottom: 34px; */
+    bottom: -4px;
   }
 }
 
 .horse {
   position: absolute;
   z-index: 6;
-  bottom: 60px;
+  /* bottom: 60px; */
+  bottom: 0;
   right: 610px;
 }
 
@@ -339,7 +355,8 @@ margin-left: 33px;
 @media (max-width: 375px) {
   .horse {
 height: 115px;
-bottom: 38px;
+/* bottom: 38px; */
+bottom: 0;
 width: 100px;
 right: 130px;
   }
@@ -348,7 +365,8 @@ right: 130px;
 .pawn {
   position: absolute;
   z-index: 6;
-  bottom: 80px;
+  /* bottom: 80px; */
+  bottom: 20px;
   right: 320px;
 }
 
@@ -361,7 +379,8 @@ right: 130px;
 @media (max-width: 375px) {
   .pawn {
     right: -100px;
-    bottom: 38px;
+    /* bottom: 38px; */
+    bottom: 0;
   }
 }
 
@@ -372,9 +391,9 @@ right: 130px;
   overflow: hidden;
   background-color: #F54932;
   gap: 12px;
-  position: absolute;
+  /* position: absolute;
   z-index: 5;
-  bottom: 0;
+  bottom: 0; */
   height: 60px;
   width: 100%;
 }
