@@ -43,14 +43,19 @@
     <main class="main">
       <section>
         <div class="run">
-          <!-- <p class="run-text">Дело помощи утопающим — дело рук самих утопающих!</p> -->
-          <p class="run-text">Дело помощи утопающим</p>
-          <span class="run-ellipse"></span>
-          <!-- <p class="run-text">Шахматы двигают вперед не только культуру, но и экономику!</p>
-          <span class="run-ellipse"></span> -->
-          <!-- <p class="run-text">Лед тронулся, господа присяжные заседатели!</p> -->
-          <!-- <span class="run-ellipse"></span> -->
-        </div>
+          <p class="run-text">
+            Дело помощи утопающим — дело рук самих утопающих! &#8226; Шахматы двигают вперед
+            не только культуру, но и экономику! &#8226; Лед тронулся, господа присяжные заседатели! &#8226;
+          </p>
+          <!-- /* --------------------непрерывная бегущая строка----------------------- */
+          <p class="run-text div1">
+            Дело помощи утопающим — дело рук самих утопающих!&#183;Шахматы двигают вперед
+            не только культуру, но и экономику!&#183;Лед тронулся, господа присяжные заседатели!&#183;
+          </p>
+          <p class="run-text div2">
+            Дело помощи утопающим — дело рук самих утопающих!&#183;Шахматы двигают вперед
+            не только культуру, но и экономику!&#183;Лед тронулся, господа присяжные заседатели!&#183;
+          </p> -->
       </section>
       <section class="tournament">
         <div class="flex">
@@ -115,61 +120,67 @@
           <h2 class="stages-title">Этапы преображения Васюков</h2>
           <h3 class="stages-subtitle">Будущие источники обогащения васюкинцев</h3>
         </div>
-        <ul class="table-grid">
-          <li class="table__cell">
-            <span class="table__number">1</span>
-            <p class="table__text">Строительство железнодорожной магистрали Москва-Васюки</p>
-          </li>
-          <li class="table__cell">
-            <span class="table__number not-number">2</span>
-            <p class="table__text not-text">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</p>
-          </li>
-          <li class="table__cell item3">
-            <span class="table__number">3</span>
-            <p class="table__text">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей,
-              фруктов, икры, шоколадных конфет</p>
-          </li>
-          <li class="table__cell">
-            <span class="table__number">4</span>
-            <p class="table__text">Строительство дворца для турнира</p>
-          </li>
-          <li class="table__cell">
-            <span class="table__number not-number">5</span>
-            <p class="table__text not-text">Размещение гаражей для гостевого автотранспорта</p>
-          </li>
-          <li class="table__cell item6">
-            <span class="table__number">6</span>
-            <p class="table__text">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
-            </p>
-          </li>
-          <li class="table__cell item7">
-            <span class="table__number">7</span>
-            <p class="table__text table__text-width">Создание аэропорта «Большие Васюки» с регулярным отправлением
-              почтовых самолётов
-              и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p>
-          </li>
-        </ul>
+        <div class="carousel-wrapper">
+          <ul class="table-grid">
+            <li class="table__cell active">
+              <span class="table__number">1</span>
+              <p class="table__text">Строительство железнодорожной магистрали Москва-Васюки</p>
+            </li>
+            <li class="table__cell">
+              <span class="table__number not-number">2</span>
+              <p class="table__text not-text">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+              </p>
+            </li>
+            <li class="table__cell item3">
+              <span class="table__number">3</span>
+              <p class="table__text">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей,
+                фруктов, икры, шоколадных конфет</p>
+            </li>
+            <li class="table__cell">
+              <span class="table__number">4</span>
+              <p class="table__text">Строительство дворца для турнира</p>
+            </li>
+            <li class="table__cell">
+              <span class="table__number not-number">5</span>
+              <p class="table__text not-text">Размещение гаражей для гостевого автотранспорта</p>
+            </li>
+            <li class="table__cell item6">
+              <span class="table__number">6</span>
+              <p class="table__text">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+              </p>
+            </li>
+            <li class="table__cell item7">
+              <span class="table__number">7</span>
+              <p class="table__text table__text-width">Создание аэропорта «Большие Васюки» с регулярным отправлением
+                почтовых самолётов
+                и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p>
+            </li>
+          </ul>
+        </div>
         <img src="./images/airplane.png" alt="" class="table__img">
 
         <div class="video__slider_box">
-          <div>
-            <button class="gallery-btn gallery-btn_direction_left"></button>
-          </div>
+          <!-- <div> -->
+          <button class="gallery-btn gallery-btn_direction_left"></button>
+          <!-- </div> -->
           <div class="video__slider_circles">
-            <span class="slider_circle active" data-circle="0"></span>
-            <span class="slider_circle" data-circle="1"></span>
-            <span class="slider_circle" data-circle="2"></span>
-            <span class="slider_circle" data-circle="3"></span>
-            <span class="slider_circle" data-circle="4"></span>
+            <span class="slider_circle active"></span>
+            <span class="slider_circle"></span>
+            <span class="slider_circle"></span>
+            <span class="slider_circle"></span>
+            <span class="slider_circle"></span>
+            <span class="slider_circle"></span>
           </div>
-          <div>
-            <button class="gallery-btn gallery-btn_direction_right active"></button>
-          </div>
+          <!-- <div> -->
+          <!-- <button class="gallery-btn gallery-btn_direction_right active"></button> -->
+          <button class="gallery-btn gallery-btn_direction_right"></button>
+          <!-- </div> -->
         </div>
       </section>
 
       <section class="participants">
         <h2 class="participants-title">Участники турнира</h2>
+        <!-- -----------------------------слайдер 1366----------------------------- -->
         <!-- <div class="carousel-wrapper"> -->
         <!-- <ul class="carousel"> -->
         <ul class="cards">
@@ -211,7 +222,6 @@
           </li>
         </ul>
         <!-- </div> -->
-
         <div class="slider__container">
           <button class="slider_arrow-left"></button>
           <div class="slider_page-number">
@@ -232,13 +242,16 @@
       </section>
       <section>
         <div class="run">
-          <!-- <p class="run-text">Дело помощи утопающим — дело рук самих утопающих!</p> -->
-          <p class="run-text">Дело помощи утопающим</p>
+          <p class="run-text">
+            Дело помощи утопающим — дело рук самих утопающих! &#8226; Шахматы двигают вперед
+            не только культуру, но и экономику! &#8226; Лед тронулся, господа присяжные заседатели! &#8226;
+          </p>
+          <!-- <p class="run-text">Дело помощи утопающим — дело рук самих утопающих!</p>
           <span class="run-ellipse"></span>
-          <!-- <p class="run-text">Шахматы двигают вперед не только культуру, но и экономику!</p>
+          <p class="run-text">Шахматы двигают вперед не только культуру, но и экономику!</p>
+          <span class="run-ellipse"></span>
+          <p class="run-text">Лед тронулся, господа присяжные заседатели!</p>
           <span class="run-ellipse"></span> -->
-          <!-- <p class="run-text">Лед тронулся, господа присяжные заседатели!</p> -->
-          <!-- <span class="run-ellipse"></span> -->
         </div>
       </section>
     </main>
