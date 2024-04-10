@@ -872,7 +872,7 @@ right: 130px;
 
 /* -------------------participants------------------- */
 .participants {
-  padding: 120px 75px;
+  padding: 120px 75px 140px;
   position: relative;
 }
 
@@ -1121,4 +1121,17 @@ right: 130px;
       height: 36px;
       width: 36px;
     }
+  }
+
+  /* ------------------footer---------------- */
+  .footer {
+    background-color: #E9DED4;
+    padding: 40px 75px 70px;
+  }
+  .footer-text {
+    font-family: "GolosText", serif;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 400;
+    margin: 0;
   }
