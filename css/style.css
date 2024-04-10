@@ -1064,7 +1064,7 @@ right: 130px;
 
   @media (max-width: 375px) {
     .participants {
-      padding: 55px 20px;
+      /* padding: 55px 20px; */
       padding: 55px 20px 140px;
       /* position: relative; */
     }
@@ -1128,10 +1128,17 @@ right: 130px;
     background-color: #E9DED4;
     padding: 40px 75px 70px;
   }
+  
   .footer-text {
     font-family: "GolosText", serif;
     font-size: 16px;
     line-height: 19.2px;
     font-weight: 400;
     margin: 0;
+  }
+
+  @media (max-width: 375px) {
+    .footer {
+      padding: 40px 20px 57px;
+    }
   }
