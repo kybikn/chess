@@ -870,6 +870,17 @@
   height: 462px;
 }
 
+.cards_item {
+  display: none;
+}
+
+.cards_item.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* .cards_item {
   padding: 0 37px;
   width: 394px;
@@ -931,7 +942,6 @@
   color: #3057A2;
 }
 
-/* ------------------slider__container------------------- */
 .slider__container {
   margin: 130px 40px 0 0;
   position: absolute;
