@@ -38,6 +38,7 @@ function activeSlide(n) {
         slides[n + 2].classList.add("active");
     }
 }
+
 // отображение точек
 function activeDot(n) {
     for (let dot of dots) {
@@ -57,6 +58,7 @@ function activePage(n) {
 // обновляет ситуацию на экране
 function currentSlide(n) {
     activeSlide(n);
+    activeDot(n);
     activePage(n);
 }
 
@@ -64,6 +66,12 @@ function currentSlide(n) {
 function onLoad() {
     updateCardsOnScreen();
     currentSlide(0);
+}
+
+// при изменении размера окна
+function onResize() {
+    updateCardsOnScreen();
+    currentSlide(index);
 }
 
 function nextSlide() {
@@ -97,4 +105,4 @@ btnNext.addEventListener("click", nextSlide);
 btnPrev.addEventListener("click", prevSlide);
 
 window.addEventListener("load", onLoad);
-window.addEventListener("resize", updateCardsOnScreen);
+window.addEventListener("resize", onResize);
