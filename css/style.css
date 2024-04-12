@@ -287,7 +287,7 @@
     height: 105px;
     bottom: 169px;
     right: 88px;
-    rotate: 10deg;
+    /* rotate: 10deg; */
   }
 
   .city {
@@ -755,7 +755,7 @@
     top: 260px;
     right: 5px;
     width: 340px;
-    rotate: -3deg;
+    /* rotate: -3deg; */
   }
 }
 
@@ -845,11 +845,11 @@
 /* -------------------participants------------------- */
 .participants {
   padding: 120px 75px 140px;
-  position: relative;
 }
 
 .participants-title {
-  margin: 0 0 62px 0;
+  display: inline;
+  margin: 0;
   text-transform: uppercase;
   font-family: "Merriweather", serif;
   font-size: 54px;
@@ -859,15 +859,11 @@
 
 .cards {
   display: flex;
-  /* gap: 90px; */
-  /* width: 1300px; */
   text-align: center;
   justify-content: space-around;
   list-style: none;
-  margin: 0;
+  margin: 62px 0 0 0;
   padding: 0;
-  overflow: hidden;
-  height: 462px;
 }
 
 .cards_item {
@@ -881,20 +877,6 @@
   align-items: center;
 }
 
-/* .cards_item {
-  padding: 0 37px;
-  width: 394px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-.cards_item:nth-child(3n+3) {
-  margin-right: 90px;
-  /* background-color: #F54932; */
-}
-
 .cards__image {
   background-image: url(../images/bg.png);
   background-color: #E9DED4;
@@ -902,14 +884,12 @@
   /* background-color: #424241; */
   background-blend-mode: color-burn, color;
   border-radius: 50%;
-  width: 320px;
   height: 320px;
-  margin: 0 43px 25px;
-  /* margin: 0 0 25px; */
+  margin: 0 0 30px;
 }
 
 .cards__title {
-  margin: 0 0 6px 0;
+  margin: 0 0 5px 0;
   text-align: center;
   font-family: "GolosText", serif;
   font-size: 24px;
@@ -918,7 +898,7 @@
 }
 
 .cards__description {
-  margin: 0 0 25px 0;
+  margin: 0 0 20px 0;
   text-align: center;
   font-family: "GolosText", serif;
   font-size: 20px;
@@ -931,7 +911,7 @@
   font-size: 16px;
   line-height: 20.8px;
   font-weight: 500;
-  padding: 6px 10px;
+  padding: 7px 10px;
   border-radius: 62px;
   max-width: 113px;
   text-decoration: none;
@@ -943,14 +923,12 @@
 }
 
 .slider__container {
-  margin: 130px 40px 0 0;
-  position: absolute;
-  top: 0;
-  right: 0;
+  float: right;
   display: flex;
   align-items: center;
-  width: 178px;
-  gap: 10px;
+  justify-content: space-between;
+  width: 151px;
+  margin: 10px 0 0 0;
 }
 
 .slider_page-number {
@@ -1001,29 +979,23 @@
 
 @media (max-width: 375px) {
   .participants {
-    /* padding: 55px 20px; */
-    padding: 55px 20px 140px;
-    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    padding: 52px 20px 100px;
   }
 
   .participants-title {
-    margin: 0;
     font-size: 36px;
     line-height: 39.6px;
   }
 
   .cards {
-    overflow: hidden;
-  }
-
-  .cards_item:nth-child(3n+3) {
-    margin-right: 0;
+    margin: 40px 0 0 0;
   }
 
   .cards__image {
     width: 244px;
     height: 244px;
-    margin: 0 0 32px 0;
   }
 
   .cards__description {
@@ -1034,19 +1006,14 @@
     line-height: 19.2px;
   }
 
-  .cards_item {
-    display: none;
-  }
-
-  .cards_item.active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .slider__container {
-    margin: 600px 75px 0 0;
+    order: 3;
+    width: 129px;
+    margin: 40px auto 0;
+  }
+
+  .slider_page-number {
+    gap: 2px;
   }
 
   .slider_arrow-left {
