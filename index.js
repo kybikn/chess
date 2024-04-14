@@ -15,9 +15,9 @@ let page = 1;
 let cardsOnScreen = 3;
 function updateCardsOnScreen() {
     let width = window.screen.availWidth;
-    if (width <= 375) {
+    if (width <= 680) {
         cardsOnScreen = 1
-    } else if (width <= 800) {
+    } else if (width <= 1024) {
         cardsOnScreen = 2
     }
     else {
