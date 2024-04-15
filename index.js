@@ -1,11 +1,11 @@
-const btnPrev = document.querySelector(".slider_arrow-left");
-const btnNext = document.querySelector(".slider_arrow-right");
+const btnPrev = document.querySelector(".slider__btn_left");
+const btnNext = document.querySelector(".slider__btn_right");
 
-const slides = document.querySelectorAll(".cards_item");
-const dots = document.querySelectorAll(".slider-square");
+const slides = document.querySelectorAll(".cards__item");
+const dots = document.querySelectorAll(".slider__dot");
 
-const currentPage = document.querySelector(".page-number.first");
-const totalPages = document.querySelector(".page-number.second");
+const currentPage = document.querySelector(".slider__page.first");
+const totalPages = document.querySelector(".slider__page.second");
 totalPages.textContent = `${slides.length}`;
 
 let index = 0;

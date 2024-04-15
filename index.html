@@ -15,19 +15,20 @@
 <body>
   <div class="page">
     <header class="header">
-      <div class="content">
+      <div class="header__content">
         <a href="#" class="logo"><img src="./images/logo.png" alt="" class="logo__img"></a>
-        <h1 class="title">
-          <span>Превратите</span>
-          <span>уездный город</span>
-          <span class="center">в столицу</span>
-          <span class="right">земного шара</span>
+        <h1 class="header__title">
+          <span class="header__span">Превратите</span>
+          <span class="header__span">уездный город</span>
+          <span class="header__span header__span_center">в столицу</span>
+          <span class="header__span header__span_right">земного шара</span>
         </h1>
-        <p class="text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
+        <p class="header__text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира
+          по шахматам
         </p>
-        <div class="button-box">
-          <a href="#" class="button button-black">Поддержать шахматную мысль</a>
-          <a href="#" class="button button-tran">Подробнее о турнире</a>
+        <div class="header__btns">
+          <a href="#" class="header__btn header__btn_left">Поддержать шахматную мысль</a>
+          <a href="#" class="header__btn header__btn_right">Подробнее о турнире</a>
         </div>
       </div>
       <img src="./images/ellipse.png" alt="" class="ellipse">
@@ -35,19 +36,18 @@
       <img src="./images/king.png" alt="" class="king">
       <img src="./images/queen.png" alt="" class="queen">
       <img src="./images/city.png" alt="" class="city">
-      <img src="./images/border.png" alt="" class="city-border">
+      <img src="./images/border.png" alt="" class="border">
       <img src="./images/horse.png" alt="" class="horse">
       <img src="./images/pawn.png" alt="" class="pawn">
     </header>
 
     <main class="main">
-      <section>
-        <div class="run">
-          <p class="run-text">
-            Дело помощи утопающим — дело рук самих утопающих! &#8226; Шахматы двигают вперед
-            не только культуру, но и экономику! &#8226; Лед тронулся, господа присяжные заседатели! &#8226;
-          </p>
-          <!-- /* --------------------непрерывная бегущая строка----------------------- */
+      <section class="run">
+        <p class="run__text">
+          Дело помощи утопающим — дело рук самих утопающих! &#8226; Шахматы двигают вперед
+          не только культуру, но и экономику! &#8226; Лед тронулся, господа присяжные заседатели! &#8226;
+        </p>
+        <!-- /* --------------------непрерывная бегущая строка----------------------- */
           <p class="run-text div1">
             Дело помощи утопающим — дело рук самих утопающих!&#183;Шахматы двигают вперед
             не только культуру, но и экономику!&#183;Лед тронулся, господа присяжные заседатели!&#183;
@@ -59,222 +59,190 @@
       </section>
 
       <section class="tournament">
-
-        <!-- <div class="flex">
-          <h2 class="tournament-title">Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему:
-            <span class="tournament-span">«Плодотворная дебютная
-              идея»</span>
-          </h2>
-          <img src="./images/tournament.jpg" alt="tournament-img" class="tournament-img">
-        </div> -->
-        <!-- 
-        <div class="flex-mob">
-          <span class="tournament-title rev">Чтобы поддержать Международный васюкинский турнир</span>
-          <img src="./images/tournament.jpg" alt="tournament-img" class="tournament-img revimg">
-          <span class="reverse tournament-title">посетите лекцию
-            на тему:</span>
-          <span class="tournament-span tournament-title">«Плодотворная дебютная
-            идея»</span>
-        </div> -->
-        <div class="magic-block">
-          <img class="span-image" src="./images/tournament.jpg" alt="tournament-img">
-          <!-- <div class="text-block"> -->
-          <span class="span1 tournament-title">Чтобы поддержать Международный васюкинский турнир</span>
-          <span class="span2 tournament-title">посетите лекцию на тему:</span>
-          <span class="span3 tournament-title tournament-span">«Плодотворная дебютная идея»</span>
-          <!-- </div> -->
-
+        <div class="tournament__block ">
+          <img class="tournament__img" src="./images/tournament.jpg" alt="tournament-img">
+          <span class="span1 tournament__title">Чтобы поддержать Международный васюкинский турнир</span>
+          <span class="span2 tournament__title">посетите лекцию на тему:</span>
+          <span class="span3 tournament__title tournament__title-span">«Плодотворная дебютная идея»</span>
         </div>
-        <div class="flex2">
-          <img src="./images/Bender.jpg" alt="" class="Bender-img">
-          <div class="tournament-title2">
-            <h2 class="tournament-title tournament-title-pad">и Сеанс<span class="tournament-span"> одновременной игры
+        <div class="tournament__block-table">
+          <img src="./images/Bender.jpg" alt="" class="tournament__img-table">
+          <div class="tournament__table">
+            <h2 class="tournament__title tournament__title-table">и Сеанс<span class="tournament__title-span">
+                одновременной игры
                 в шахматы
                 на 160 досках
               </span>гроссмейстера О. Бендера
             </h2>
             <table class="table">
-              <tbody class="table-box">
-                <tr class="table-row">
-                  <td class="table-column table-title">Место проведения:</td>
-                  <td class="table-column table-text">Клуб «Картонажник»</td>
+              <tbody class="table__box">
+                <tr class="table__row">
+                  <td class="table__column table__title">Место проведения:</td>
+                  <td class="table__column table__text">Клуб «Картонажник»</td>
                 </tr>
-                <tr class="table-row">
-                  <td class="table-column table-title">Дата и время мероприятия:</td>
-                  <td class="table-column table-text">22 июня 1927 г. в 18:00</td>
+                <tr class="table__row">
+                  <td class="table__column table__title">Дата и время мероприятия:</td>
+                  <td class="table__column table__text">22 июня 1927 г. в 18:00</td>
                 </tr>
-                <tr class="table-row">
-                  <td class="table-column table-title">Стоимость входных билетов:</td>
-                  <td class="table-column table-text">20 коп.</td>
+                <tr class="table__row">
+                  <td class="table__column table__title">Стоимость входных билетов:</td>
+                  <td class="table__column table__text">20 коп.</td>
                 </tr>
-                <tr class="table-row nowrap">
-                  <td class="table-column table-title nowrap-title">Плата за игру:</td>
-                  <td class="table-column table-text nowrap-center">50 коп.</td>
+                <tr class="table__row table__row_nowrap">
+                  <td class="table__column table__title table__title_nowrap">Плата за игру:</td>
+                  <td class="table__column table__text table__text_nowrap">50 коп.</td>
                 </tr>
-                <tr class="table-row">
-                  <td class="table-column table-title">Взнос на телеграммы:</td>
-                  <td class="table-column table-text">
-                    <del class="table-text-span"><span class="table-text-black">100 руб.</span></del> 21 руб.
+                <tr class="table__row">
+                  <td class="table__column table__title">Взнос на телеграммы:</td>
+                  <td class="table__column table__text">
+                    <del class="table__text-del"><span class="table__text-span">100 руб.</span></del>
+                    21
+                    руб.
                     16 коп.
                   </td>
                 </tr>
               </tbody>
             </table>
-            <p class="tournament-text">По всем вопросам обращаться в администрацию к К. Михельсону</p>
+            <p class="tournament__text">По всем вопросам обращаться в администрацию к К. Михельсону</p>
           </div>
         </div>
       </section>
 
       <section class="stages">
-        <div class="stages-title-box">
-          <h2 class="stages-title">Этапы преображения Васюков</h2>
-          <h3 class="stages-subtitle">Будущие источники обогащения васюкинцев</h3>
+        <div class="stages__title-box">
+          <h2 class="stages__title">Этапы преображения Васюков</h2>
+          <h3 class="stages__subtitle">Будущие источники обогащения васюкинцев</h3>
         </div>
         <ul class="table-grid">
-          <li class="table__cell active">
-            <span class="table__number">1</span>
-            <p class="table__text">Строительство железнодорожной магистрали Москва-Васюки</p>
+          <li class="table-grid__cell">
+            <span class="table-grid__number">1</span>
+            <p class="table-grid__text">Строительство железнодорожной магистрали Москва-Васюки</p>
           </li>
-          <li class="table__cell">
-            <span class="table__number not-number">2</span>
-            <p class="table__text not-text">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+          <li class="table-grid__cell">
+            <span class="table-grid__number table-grid__number_position">2</span>
+            <p class="table-grid__text table-grid__text_position">Открытие фешенебельной гостиницы «Проходная пешка»
+              и других небоскрёбов
             </p>
           </li>
-          <li class="table__cell item3">
-            <span class="table__number">3</span>
-            <p class="table__text">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей,
+          <li class="table-grid__cell table-grid__item3">
+            <span class="table-grid__number">3</span>
+            <p class="table-grid__text">Поднятие сельского хозяйства в радиусе на тысячу километров: производство
+              овощей,
               фруктов, икры, шоколадных конфет</p>
           </li>
-          <li class="table__cell">
-            <span class="table__number">4</span>
-            <p class="table__text">Строительство дворца для турнира</p>
+          <li class="table-grid__cell">
+            <span class="table-grid__number">4</span>
+            <p class="table-grid__text">Строительство дворца для турнира</p>
           </li>
-          <li class="table__cell">
-            <span class="table__number not-number">5</span>
-            <p class="table__text not-text">Размещение гаражей для гостевого автотранспорта</p>
+          <li class="table-grid__cell">
+            <span class="table-grid__number table-grid__number_position">5</span>
+            <p class="table-grid__text table-grid__text_position">Размещение гаражей для гостевого
+              автотранспорта</p>
           </li>
-          <li class="table__cell item6">
-            <span class="table__number">6</span>
-            <p class="table__text">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+          <li class="table-grid__cell table-grid__item6">
+            <span class="table-grid__number">6</span>
+            <p class="table-grid__text">Постройка сверхмощной радиостанции для передачи всему миру сенсационных
+              результатов
             </p>
           </li>
-          <li class="table__cell item7">
-            <span class="table__number">7</span>
-            <p class="table__text table__text-width">Создание аэропорта «Большие Васюки» с регулярным отправлением
+          <li class="table-grid__cell table-grid__item7">
+            <span class="table-grid__number">7</span>
+            <p class="table-grid__text table-grid__text_width">Создание аэропорта «Большие Васюки»
+              с регулярным отправлением
               почтовых самолётов
               и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p>
           </li>
         </ul>
-        <img src="./images/airplane.png" alt="" class="table__img">
-        <div class="video__slider_box">
-          <button class="gallery-btn gallery-btn_direction_left"></button>
-          <div class="video__slider_circles">
-            <span class="slider_circle active"></span>
-            <span class="slider_circle"></span>
-            <span class="slider_circle"></span>
-            <span class="slider_circle"></span>
-            <span class="slider_circle"></span>
-            <span class="slider_circle"></span>
+        <img src="./images/airplane.png" alt="" class="stages__img">
+        <div class="slider-grid">
+          <button class="slider-grid__btn slider-grid__btn_left"></button>
+          <div class="slider-grid__dots">
+            <span class="slider-grid__dot active"></span>
+            <span class="slider-grid__dot"></span>
+            <span class="slider-grid__dot"></span>
+            <span class="slider-grid__dot"></span>
+            <span class="slider-grid__dot"></span>
           </div>
-          <!-- <button class="gallery-btn gallery-btn_direction_right active"></button> -->
-          <button class="gallery-btn gallery-btn_direction_right"></button>
+          <!-- <button class="slider-grid__btn slider-grid__btn_direction_right active"></button> -->
+          <button class="slider-grid__btn slider-grid__btn_right"></button>
         </div>
       </section>
 
       <section class="participants">
-        <h2 class="participants-title">Участники турнира</h2>
-        <div class="slider__container">
-          <button class="slider_arrow-left"></button>
-          <div class="slider_page-number">
-            <p class="page-number first">1</p>
-            <p class="page-number delimiter">/</p>
-            <p class="page-number second">6</p>
+        <h2 class="participants__title">Участники турнира</h2>
+        <div class="slider">
+          <button class="slider__btn slider__btn_left"></button>
+          <div class="slider__pages">
+            <p class="slider__page first">1</p>
+            <p class="slider__page delimiter">/</p>
+            <p class="slider__page second">6</p>
           </div>
-          <div class="slider-squares">
-            <span class="slider-square active"></span>
-            <span class="slider-square"></span>
-            <span class="slider-square"></span>
-            <span class="slider-square"></span>
-            <span class="slider-square"></span>
-            <span class="slider-square"></span>
+          <div class="slider__dots">
+            <span class="slider__dot active"></span>
+            <span class="slider__dot"></span>
+            <span class="slider__dot"></span>
+            <span class="slider__dot"></span>
+            <span class="slider__dot"></span>
+            <span class="slider__dot"></span>
           </div>
-          <button class="slider_arrow-right"></button>
+          <button class="slider__btn slider__btn_right"></button>
         </div>
 
         <ul class="cards">
-          <li class="cards_item">
+          <li class="cards__item">
             <img src="./images/person.png" alt="" class="cards__image">
             <h4 class="cards__title">Хозе-Рауль Капабланка</h4>
-            <p class="cards__description">Чемпион мира по шахматам</p>
-            <a href="#" class="button-cards">Подробнее</a>
+            <p class="cards__text">Чемпион мира по шахматам</p>
+            <a href="#" class="cards__btn ">Подробнее</a>
           </li>
-          <li class="cards_item">
+          <li class="cards__item">
             <img src="./images/person.png" alt="" class="cards__image">
             <h4 class="cards__title">Эммануил Ласкер</h4>
-            <p class="cards__description">Чемпион мира по шахматам</p>
-            <a href="#" class="button-cards">Подробнее</a>
+            <p class="cards__text">Чемпион мира по шахматам</p>
+            <a href="#" class="cards__btn">Подробнее</a>
           </li>
-          <li class="cards_item">
+          <li class="cards__item">
             <img src="./images/person.png" alt="" class="cards__image">
             <h4 class="cards__title">Александр Алехин</h4>
-            <p class="cards__description">Чемпион мира по шахматам</p>
-            <a href="#" class="button-cards">Подробнее</a>
+            <p class="cards__text">Чемпион мира по шахматам</p>
+            <a href="#" class="cards__btn">Подробнее</a>
           </li>
-          <li class="cards_item">
+          <li class="cards__item">
             <img src="./images/person.png" alt="" class="cards__image">
             <h4 class="cards__title">Арон Нимцович</h4>
-            <p class="cards__description">Чемпион мира по шахматам</p>
-            <a href="#" class="button-cards">Подробнее</a>
+            <p class="cards__text">Чемпион мира по шахматам</p>
+            <a href="#" class="cards__btn">Подробнее</a>
           </li>
-          <li class="cards_item">
+          <li class="cards__item">
             <img src="./images/person.png" alt="" class="cards__image">
             <h4 class="cards__title">Рихард Рети</h4>
-            <p class="cards__description">Чемпион мира по шахматам</p>
-            <a href="#" class="button-cards">Подробнее</a>
+            <p class="cards__text">Чемпион мира по шахматам</p>
+            <a href="#" class="cards__btn">Подробнее</a>
           </li>
-          <li class="cards_item">
+          <li class="cards__item">
             <img src="./images/person.png" alt="" class="cards__image">
             <h4 class="cards__title">Остап Бендер</h4>
-            <p class="cards__description">Чемпион мира по шахматам</p>
-            <a href="#" class="button-cards">Подробнее</a>
+            <p class="cards__text">Чемпион мира по шахматам</p>
+            <a href="#" class="cards__btn">Подробнее</a>
           </li>
-          <!-- <li class="cards_item">
+          <!-- <li class="cards__item">
             <img src="./images/person.png" alt="" class="cards__image">
             <h4 class="cards__title">Седьмой</h4>
-            <p class="cards__description">Седьмой в мире по шахматам</p>
-            <a href="#" class="button-cards">Подробнее</a>
+            <p class="cards__text">Седьмой в мире по шахматам</p>
+            <a href="#" class="cards__btn">Подробнее</a>
           </li> -->
         </ul>
-        <!-- <div class="slider__container">
-          <button class="slider_arrow-left"></button>
-          <div class="slider_page-number">
-            <p class="page-number first">1</p>
-            <p class="page-number delimiter">/</p>
-            <p class="page-number second">6</p>
-          </div>
-          <div class="slider-squares">
-            <span class="slider-square active"></span>
-            <span class="slider-square"></span>
-            <span class="slider-square"></span>
-            <span class="slider-square"></span>
-            <span class="slider-square"></span>
-            <span class="slider-square"></span>
-          </div>
-          <button class="slider_arrow-right"></button>
-        </div> -->
       </section>
 
-      <section>
-        <div class="run">
-          <p class="run-text">
-            Дело помощи утопающим — дело рук самих утопающих! &#8226; Шахматы двигают вперед
-            не только культуру, но и экономику! &#8226; Лед тронулся, господа присяжные заседатели! &#8226;
-          </p>
-        </div>
+      <section class="run">
+        <p class="run__text">
+          Дело помощи утопающим — дело рук самих утопающих! &#8226; Шахматы двигают вперед
+          не только культуру, но и экономику! &#8226; Лед тронулся, господа присяжные заседатели! &#8226;
+        </p>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer-text">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта.
+      <p class="footer__text">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта.
         С подробностями можно
         познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
     </footer>
