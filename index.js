@@ -1,14 +1,18 @@
+const CARDS_AMOUNT = 5;
+const SLIDE_WIDTH = 335;
+
+const SMALL_SCREEN = 680;
+const LARGE_SCREEN = 1024;
+
 // --------------------- grid slider---------------------------------
 const slider = document.querySelector(".table-grid__wrapper");
 const btnGridPrev = document.querySelector(".slider-grid__btn_left");
 const btnGridNext = document.querySelector(".slider-grid__btn_right");
 const dotsGrid = document.querySelectorAll(".slider-grid__dot");
 
-const CARDSAMOUNT = 5;
-const SLIDEWIDTH = 335;
 
-const maxDotIndex = CARDSAMOUNT - 1;
-const maxOffset = maxDotIndex * SLIDEWIDTH;
+const maxDotIndex = CARDS_AMOUNT - 1;
+const maxOffset = maxDotIndex * SLIDE_WIDTH;
 
 let offset = 0;
 let dotIndex = 0;
@@ -43,7 +47,7 @@ function startGridSlides() {
 }
 
 function nextGridSlide() {
-    offset = offset + SLIDEWIDTH;
+    offset = offset + SLIDE_WIDTH;
     dotIndex++;
     slider.style.left = -offset + 'px';
     updateDots(dotIndex);
@@ -51,7 +55,7 @@ function nextGridSlide() {
 }
 
 function prevGridSlide() {
-    offset = offset - SLIDEWIDTH;
+    offset = offset - SLIDE_WIDTH;
     dotIndex--;
     slider.style.left = -offset + 'px';
     updateDots(dotIndex);
@@ -81,9 +85,9 @@ let cardsOnScreen = 3;
 
 function updateCardsOnScreen() {
     let width = window.innerWidth;
-    if (width <= 680) {
+    if (width <= SMALL_SCREEN) {
         cardsOnScreen = 1
-    } else if (width <= 1024) {
+    } else if (width <= LARGE_SCREEN) {
         cardsOnScreen = 2
     }
     else {
