@@ -1,3 +1,4 @@
+// ---------------------slider---------------------------------
 const btnPrev = document.querySelector(".slider__btn_left");
 const btnNext = document.querySelector(".slider__btn_right");
 
@@ -74,6 +75,7 @@ function onResize() {
     currentSlide(index);
 }
 
+// следующий слайд
 function nextSlide() {
     index = index + cardsOnScreen;
     if (index >= slides.length) {
@@ -84,6 +86,7 @@ function nextSlide() {
     }
 }
 
+// предыдущий слайд
 function prevSlide() {
     index = index - cardsOnScreen;
     if (index < 0) {
@@ -107,3 +110,31 @@ btnPrev.addEventListener("click", prevSlide);
 window.addEventListener("load", onLoad);
 window.addEventListener("resize", onResize);
 
+
+// --------------------- grid slider---------------------------------
+const slider = document.querySelector(".table-grid");
+const btnGridPrev = document.querySelector(".btn-arrow_left");
+const btnGridNext = document.querySelector(".btn-arrow_right");
+const dotsGrid = document.querySelectorAll(".slider-grid__dot");
+
+let offset = 0; /* смещение от левого края */
+
+function nextGridSlide() {
+    offset = offset + 335;
+
+    if (offset > 1340) {
+        offset = 0; // возвращение на нулевую позицию
+    }
+    slider.style.left = -offset + 'px';
+    // dotsGrid.classList.add("active-dot");
+}
+
+function prevGridSlide() {
+    offset = offset - 335;
+    if (offset < 0) {
+        offset = 1340;
+    } slider.style.left = -offset + 'px';
+}
+
+btnGridNext.addEventListener("click", nextGridSlide);
+btnGridPrev.addEventListener("click", prevGridSlide);
