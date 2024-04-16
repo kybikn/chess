@@ -1,3 +1,31 @@
+// --------------------- grid slider---------------------------------
+const slider = document.querySelector(".table-grid__wrapper");
+const btnGridPrev = document.querySelector(".slider-grid__btn_left");
+const btnGridNext = document.querySelector(".slider-grid__btn_right");
+const dotsGrid = document.querySelectorAll(".slider-grid__dot");
+
+let offset = 0; /* смещение от левого края */
+
+function nextGridSlide() {
+    offset = offset + 335;
+    if (offset > 1340) {
+        offset = 0; // возвращение на нулевую позицию
+    }
+    slider.style.left = -offset + 'px';
+}
+
+function prevGridSlide() {
+    offset = offset - 335;
+    if (offset < 0) {
+        offset = 1340;
+    }
+    slider.style.left = -offset + 'px';
+}
+
+btnGridNext.addEventListener("click", nextGridSlide);
+btnGridPrev.addEventListener("click", prevGridSlide);
+
+
 // ---------------------slider---------------------------------
 const btnPrev = document.querySelector(".slider__btn_left");
 const btnNext = document.querySelector(".slider__btn_right");
@@ -14,8 +42,9 @@ let page = 1;
 
 // количество одновременных карточек на экране
 let cardsOnScreen = 3;
+
 function updateCardsOnScreen() {
-    let width = window.screen.availWidth;
+    let width = window.innerWidth;
     if (width <= 680) {
         cardsOnScreen = 1
     } else if (width <= 1024) {
@@ -107,34 +136,6 @@ dots.forEach((item, indexDot) => {
 btnNext.addEventListener("click", nextSlide);
 btnPrev.addEventListener("click", prevSlide);
 
+
 window.addEventListener("load", onLoad);
-window.addEventListener("resize", onResize);
-
-
-// --------------------- grid slider---------------------------------
-const slider = document.querySelector(".table-grid");
-const btnGridPrev = document.querySelector(".btn-arrow_left");
-const btnGridNext = document.querySelector(".btn-arrow_right");
-const dotsGrid = document.querySelectorAll(".slider-grid__dot");
-
-let offset = 0; /* смещение от левого края */
-
-function nextGridSlide() {
-    offset = offset + 335;
-
-    if (offset > 1340) {
-        offset = 0; // возвращение на нулевую позицию
-    }
-    slider.style.left = -offset + 'px';
-    // dotsGrid.classList.add("active-dot");
-}
-
-function prevGridSlide() {
-    offset = offset - 335;
-    if (offset < 0) {
-        offset = 1340;
-    } slider.style.left = -offset + 'px';
-}
-
-btnGridNext.addEventListener("click", nextGridSlide);
-btnGridPrev.addEventListener("click", prevGridSlide);
+window.addEventListener("resize", onResize)
