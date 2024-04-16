@@ -1,9 +1,0 @@
-.highway__gallery-img {
-  max-width: 100%;
-}
-
-@media screen and (max-width: 320px) {
-  .highway__gallery-img {
-    width: 284px;
-  }
-}

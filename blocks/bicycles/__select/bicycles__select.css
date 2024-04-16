@@ -1,9 +1,0 @@
-.bicycles__select {
-  display: none;
-}
-
-@media screen and (max-width: 590px) {
-  .bicycles__select {
-    display: block;
-  }
-}
