@@ -947,6 +947,10 @@
     background-color: #313131;
   }
 
+  .active-btn {
+    background-color: #313131;
+  }
+
   /* .slider-grid__dot.active {
     background-color: red;
   } */
@@ -955,11 +959,23 @@
     width: 36px;
     height: 36px;
     opacity: 20%;
+    /* padding: 0;
+    position: relative;
+    border: none;
+    border-radius: 50%;
+    background-color: #313131;
+    cursor: pointer;
+    transition: 0.5s; */
   }
 
   /* .slider-grid__btn:hover {
   background-color: #FBCE51;
 } */
+
+  .active-btn {
+    opacity: 100%;
+    /* background-color: #313131; */
+  }
 
   .slider-grid__btn_left::before {
     content: "";

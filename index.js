@@ -4,22 +4,58 @@ const btnGridPrev = document.querySelector(".slider-grid__btn_left");
 const btnGridNext = document.querySelector(".slider-grid__btn_right");
 const dotsGrid = document.querySelectorAll(".slider-grid__dot");
 
-let offset = 0; /* смещение от левого края */
+const CARDSAMOUNT = 5;
+const SLIDEWIDTH = 335;
+
+const maxDotIndex = CARDSAMOUNT - 1;
+const maxOffset = maxDotIndex * SLIDEWIDTH;
+
+let offset = 0;
+let dotIndex = 0;
+
+function updateDots(index) {
+    for (let dot of dotsGrid) {
+        dot.classList.remove('active-dot');
+    }
+    dotsGrid[index].classList.add('active-dot')
+}
+
+function updateBtns(index) {
+    if (index == 0) {
+        btnGridPrev.classList.remove('active-btn');
+        btnGridPrev.disabled = true;
+    } else {
+        btnGridPrev.classList.add('active-btn')
+        btnGridPrev.disabled = false;
+    }
+    if (index == maxDotIndex) {
+        btnGridNext.classList.remove('active-btn');
+        btnGridNext.disabled = true;
+    } else {
+        btnGridNext.classList.add('active-btn')
+        btnGridNext.disabled = false;
+    }
+}
+
+function startGridSlides() {
+    updateDots(dotIndex);
+    updateBtns(dotIndex);
+}
 
 function nextGridSlide() {
-    offset = offset + 335;
-    if (offset > 1340) {
-        offset = 0; // возвращение на нулевую позицию
-    }
+    offset = offset + SLIDEWIDTH;
+    dotIndex++;
     slider.style.left = -offset + 'px';
+    updateDots(dotIndex);
+    updateBtns(dotIndex);
 }
 
 function prevGridSlide() {
-    offset = offset - 335;
-    if (offset < 0) {
-        offset = 1340;
-    }
+    offset = offset - SLIDEWIDTH;
+    dotIndex--;
     slider.style.left = -offset + 'px';
+    updateDots(dotIndex);
+    updateBtns(dotIndex);
 }
 
 btnGridNext.addEventListener("click", nextGridSlide);
@@ -92,18 +128,6 @@ function currentSlide(n) {
     activePage(n);
 }
 
-// при загрузке
-function onLoad() {
-    updateCardsOnScreen();
-    currentSlide(0);
-}
-
-// при изменении размера окна
-function onResize() {
-    updateCardsOnScreen();
-    currentSlide(index);
-}
-
 // следующий слайд
 function nextSlide() {
     index = index + cardsOnScreen;
@@ -132,6 +156,19 @@ dots.forEach((item, indexDot) => {
         currentSlide(index);
     });
 });
+
+// при загрузке
+function onLoad() {
+    updateCardsOnScreen();
+    currentSlide(0);
+    startGridSlides();
+}
+
+// при изменении размера окна
+function onResize() {
+    updateCardsOnScreen();
+    currentSlide(index);
+}
 
 btnNext.addEventListener("click", nextSlide);
 btnPrev.addEventListener("click", prevSlide);
