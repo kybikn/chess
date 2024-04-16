@@ -106,3 +106,4 @@ btnPrev.addEventListener("click", prevSlide);
 
 window.addEventListener("load", onLoad);
 window.addEventListener("resize", onResize);
+
