@@ -686,7 +686,7 @@
   flex-wrap: wrap;
 }
 
-.table-grid {
+.table-grid__wrapper {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -768,7 +768,7 @@
     padding: 80px 42px;
   }
 
-  .table-grid {
+  .table-grid__wrapper {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, min-content);
     gap: 15px;
@@ -792,7 +792,7 @@
     line-height: 39.6px;
   }
 
-  .table-grid {
+  .table-grid__wrapper {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, min-content);
     gap: 15px;
@@ -860,11 +860,11 @@
     right: 10px;
   }
 
-  .wrapper {
+  .table-grid {
     overflow: hidden;
   }
 
-  .table-grid {
+  .table-grid__wrapper {
     margin: 0 auto;
     grid-template-columns: repeat(5, 335px);
     grid-template-rows: repeat(2, 150px);
@@ -961,7 +961,7 @@
   background-color: #FBCE51;
 } */
 
-  .btn-arrow_left::before {
+  .slider-grid__btn_left::before {
     content: "";
     background: url(../images/arrow-left.svg) no-repeat center;
     position: absolute;
@@ -971,7 +971,7 @@
     bottom: 0;
   }
 
-  .btn-arrow_right::before {
+  .slider-grid__btn_right::before {
     content: "";
     background: url(../images/arrow-right.svg) no-repeat center;
     position: absolute;
@@ -986,6 +986,34 @@
 .participants {
   padding: 120px 75px 135px;
 }
+
+.slider__btn_left {
+  background: url(../images/arrow-left.svg) no-repeat center;
+}
+
+.slider__btn_right {
+  background: url(../images/arrow-right.svg) no-repeat center;
+}
+
+/* .slider__btn_left::before {
+  content: "";
+  background: url(../images/arrow-left.svg) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider__btn_right::before {
+  content: "";
+  background: url(../images/arrow-right.svg) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
 
 /* .participants__title {
   margin: 0;
@@ -1080,8 +1108,8 @@
 .btn-arrow {
   padding: 0;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-repeat: no-repeat;
+  background-position: center; */
   border: none;
   border-radius: 50%;
   background-color: #313131;
