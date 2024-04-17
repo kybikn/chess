@@ -121,6 +121,7 @@ function activeDot(n) {
 function activePage(n) {
     page = Math.ceil((n + 1) / cardsOnScreen);
     currentPage.innerText = (page);
+    currentPage.classList.add("active");
     const totalPagesNum = Math.ceil((slides.length) / cardsOnScreen);
     totalPages.innerText = totalPagesNum
 }
