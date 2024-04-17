@@ -1,11 +1,13 @@
 /* @media 1919, 1680, 1366, 1330, 1280, 960, 768, 680, 375,  */
+/* font-family: var(--color-secondary); */
+
 .page {
   max-width: 1920px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #FFFFFF;
-  color: #313131;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,7 +24,7 @@
   overflow: hidden;
   background-image: url(../images/bg.png);
   background-blend-mode: color-burn, color;
-  background-color: #E9DED4;
+  background-color: var(--color-background);
 }
 
 .header__content {
@@ -36,15 +38,19 @@
 .logo {
   margin: 0 0 58px 0;
   z-index: 7;
-  font-family: "GolosText", serif;
+  /* font-family: var(--color-secondary);
   font-size: 16.65px;
   line-height: 17.98px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #595653;
-  cursor: pointer;
-  transition: 1s;
+  font-weight: 700; */
+  /* text-transform: uppercase; */
+  /* color: var(--color-logo); */
+  /* cursor: pointer;
+  transition: 0.8s; */
 }
+
+/* .logo__img:hover {
+  color: var(--color-hover);
+} */
 
 .header__title {
   margin: 0 0 25px 0;
@@ -54,8 +60,7 @@
 }
 
 .header__span {
-  /* color: #313131; */
-  font-family: "Merriweather", serif;
+  font-family: var(--color-primary);
   font-size: 60px;
   line-height: 66px;
   font-weight: 400;
@@ -71,11 +76,10 @@
 }
 
 .header__text {
-  /* color: #313131; */
   margin: 0 0 40px 0;
   z-index: 7;
   text-align: center;
-  font-family: "GolosText", serif;
+  font-family: var(--color-secondary);
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 400;
@@ -90,12 +94,12 @@
 .btn {
   text-align: center;
   text-decoration: none;
-  font-family: "GolosText", serif;
+  font-family: var(--color-secondary);
   font-size: 16px;
   line-height: 20.8px;
   font-weight: 500;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.8s;
 }
 
 .header__btn {
@@ -105,14 +109,24 @@
 }
 
 .header__btn_left {
-  color: #FFFFFF;
-  background-color: #1F1F1F;
+  color: var(--color-secondary);
+  background-color: var(--color-button);
+}
+
+.header__btn_left:hover {
+  color: var(--color-button);
+  background-color: var(--color-hover);
 }
 
 .header__btn_right {
-  color: #1F1F1F;
+  color: var(--color-button);
   background-color: transparent;
-  border: 2px solid #1F1F1F;
+  border: 2px solid var(--color-button);
+}
+
+.header__btn_right:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-button);
 }
 
 .ellipse {
@@ -232,7 +246,7 @@
   }
 
   .header__btn_right {
-    background-color: #FFFFFF;
+    background-color: var(--color-secondary);
   }
 }
 
@@ -281,8 +295,8 @@
 
   .logo {
     margin: 0 0 38px 0;
-    font-size: 14.42px;
-    line-height: 15.57px;
+    /* font-size: 14.42px;
+    line-height: 15.57px; */
   }
 
   .logo__img {
@@ -353,7 +367,7 @@
   flex-wrap: nowrap;
   gap: 12px;
   overflow: hidden;
-  background-color: #F54932;
+  background-color: var(--color-attention);
 }
 
 .run__text {
@@ -361,12 +375,12 @@
   padding: 18px 0 18px 90px;
   display: inline-block;
   white-space: nowrap;
-  font-family: "Merriweather", serif;
+  font-family: var(--color-primary);
   font-size: 22px;
   line-height: 24.2px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--color-secondary);
   animation: marquee 20s infinite linear;
 }
 
@@ -438,7 +452,7 @@
 
 .tournament__title {
   margin: 0;
-  font-family: "Merriweather", serif;
+  font-family: var(--color-primary);
   font-size: 36px;
   line-height: 48.6px;
   font-weight: 400;
@@ -447,7 +461,7 @@
 
 .tournament__title-span {
   font-weight: 700;
-  color: #F54932;
+  color: var(--color-attention);
 }
 
 .tournament__block-table {
@@ -480,7 +494,7 @@
 
 .table__text {
   padding: 15px 0 15px 15px;
-  font-family: "GolosText", serif;
+  font-family: var(--color-secondary);
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
@@ -488,12 +502,12 @@
 
 .table__text-del {
   text-decoration: line-through;
-  color: #F54932;
+  color: var(--color-attention);
 }
 
 .table__text-span {
   padding: 0 10px 0 0;
-  color: #313131;
+  color: var(--color-primary);
 }
 
 .tournament__text {
@@ -649,7 +663,7 @@
 .title {
   margin: 0;
   display: inline;
-  font-family: "Merriweather", serif;
+  font-family: var(--color-primary);
   font-size: 54px;
   line-height: 64.8px;
   font-weight: 400;
@@ -657,18 +671,18 @@
 }
 
 .subtitle {
-  font-family: "GolosText", serif;
+  font-family: var(--color-secondary);
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
 }
 
 .subtitle-blue {
-  font-family: "GolosText", serif;
+  font-family: var(--color-secondary);
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
-  color: #3057A2;
+  color: var(--color-additional);
 }
 
 @media (max-width: 375px) {
@@ -695,12 +709,13 @@
   grid-template-rows: 112px 112px 136px;
   gap: 20px;
   position: relative;
+  transition: 0.8s;
 }
 
 .table-grid__cell {
   display: flex;
   background-image: url(../images/bg.png);
-  background-color: #E9DED4;
+  background-color: var(--color-background);
   background-blend-mode: color-burn, color;
   list-style: none;
 }
@@ -714,18 +729,18 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-family: "GolosText", serif;
+  font-family: var(--color-secondary);
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
-  background-color: #FFFFFF;
+  background-color: var(--color-secondary);
 }
 
 .table-grid__text {
   max-width: 300px;
   width: 100%;
   margin: 20px 5px 10px 0;
-  font-family: "GolosText", serif;
+  font-family: var(--color-secondary);
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
@@ -932,7 +947,7 @@
     border-radius: 50%;
     background-color: #D9D9D9;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.8s;
   }
 
   /* .slider-grid__dot:hover {
@@ -940,15 +955,15 @@
 } */
 
   .slider-grid__dot:active {
-    background-color: #313131;
+    background-color: var(--color-primary);
   }
 
   .active-dot {
-    background-color: #313131;
+    background-color: var(--color-primary);
   }
 
   .active-btn {
-    background-color: #313131;
+    background-color: var(--color-primary);
   }
 
   /* .slider-grid__dot.active {
@@ -959,6 +974,7 @@
     width: 36px;
     height: 36px;
     opacity: 20%;
+    /* background-color: #D6D6D6; */
     /* padding: 0;
     position: relative;
     border: none;
@@ -969,12 +985,12 @@
   }
 
   /* .slider-grid__btn:hover {
-  background-color: #FBCE51;
+background-color: var(--color-hover);
 } */
 
   .active-btn {
+    /* background-color: #D6D6D6; */
     opacity: 100%;
-    /* background-color: #313131; */
   }
 
   .slider-grid__btn_left::before {
@@ -1034,7 +1050,7 @@
 /* .participants__title {
   margin: 0;
   display: inline;
-  font-family: "Merriweather", serif;
+font-family: var(--color-primary);
   font-size: 54px;
   line-height: 64.8px;
   font-weight: 400;
@@ -1066,7 +1082,7 @@
   margin: 0 0 30px;
   background-image: url(../images/bg.png);
   border-radius: 50%;
-  background-color: #E9DED4;
+  background-color: var(--color-background);
   /* background-size: cover; */
   /* background-color: #424241; */
   background-blend-mode: color-burn, color;
@@ -1075,7 +1091,7 @@
 .cards__title {
   margin: 0 0 5px 0;
   text-align: center;
-  font-family: "GolosText", serif;
+  font-family: var(--color-secondary);
   font-size: 24px;
   line-height: 28.8px;
   font-weight: 600;
@@ -1090,9 +1106,16 @@
   max-width: 113px;
   padding: 7px 10px;
   border-radius: 62px;
-  border: 2px solid #3057A2;
+  border: 2px solid var(--color-additional);
   background-color: transparent;
-  color: #3057A2;
+  color: var(--color-additional);
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.cards__btn:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-additional);
 }
 
 .slider {
@@ -1111,7 +1134,7 @@
 
 .slider__page {
   margin: 0;
-  font-family: "GolosText", serif;
+  font-family: var(--color-secondary);
   font-size: 16px;
   line-height: 19.2px;
   font-weight: 400;
@@ -1128,9 +1151,13 @@
   background-position: center; */
   border: none;
   border-radius: 50%;
-  background-color: #313131;
+  background-color: var(--color-primary);
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.8s;
+}
+
+.btn-arrow:hover {
+  background-color: var(--color-hover);
 }
 
 .slider__btn {
@@ -1202,12 +1229,12 @@
 /* ------------------footer---------------- */
 .footer {
   padding: 40px 75px 70px;
-  background-color: #E9DED4;
+  background-color: var(--color-background);
 }
 
 .footer__text {
   margin: 0;
-  font-family: "GolosText", serif;
+  font-family: var(--color-secondary);
   font-size: 16px;
   line-height: 19.2px;
   font-weight: 400;
