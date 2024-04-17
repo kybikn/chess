@@ -1,5 +1,4 @@
 /* @media 1919, 1680, 1366, 1330, 1280, 960, 768, 680, 375,  */
-/* font-family: var(--color-secondary); */
 
 .page {
   max-width: 1920px;
@@ -38,7 +37,7 @@
 .logo {
   margin: 0 0 58px 0;
   z-index: 7;
-  /* font-family: var(--color-secondary);
+  /* font-family: var(--font-family-secondary); 
   font-size: 16.65px;
   line-height: 17.98px;
   font-weight: 700; */
@@ -60,7 +59,7 @@
 }
 
 .header__span {
-  font-family: var(--color-primary);
+  font-family: var(--font-family-primary);
   font-size: 60px;
   line-height: 66px;
   font-weight: 400;
@@ -79,7 +78,7 @@
   margin: 0 0 40px 0;
   z-index: 7;
   text-align: center;
-  font-family: var(--color-secondary);
+  font-family: var(--font-family-secondary);
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 400;
@@ -94,7 +93,7 @@
 .btn {
   text-align: center;
   text-decoration: none;
-  font-family: var(--color-secondary);
+  font-family: var(--font-family-secondary);
   font-size: 16px;
   line-height: 20.8px;
   font-weight: 500;
@@ -375,7 +374,7 @@
   padding: 18px 0 18px 90px;
   display: inline-block;
   white-space: nowrap;
-  font-family: var(--color-primary);
+  font-family: var(--font-family-primary);
   font-size: 22px;
   line-height: 24.2px;
   font-weight: 400;
@@ -452,7 +451,7 @@
 
 .tournament__title {
   margin: 0;
-  font-family: var(--color-primary);
+  font-family: var(--font-family-primary);
   font-size: 36px;
   line-height: 48.6px;
   font-weight: 400;
@@ -494,7 +493,7 @@
 
 .table__text {
   padding: 15px 0 15px 15px;
-  font-family: var(--color-secondary);
+  font-family: var(--font-family-secondary);
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
@@ -663,7 +662,7 @@
 .title {
   margin: 0;
   display: inline;
-  font-family: var(--color-primary);
+  font-family: var(--font-family-primary);
   font-size: 54px;
   line-height: 64.8px;
   font-weight: 400;
@@ -671,14 +670,14 @@
 }
 
 .subtitle {
-  font-family: var(--color-secondary);
+  font-family: var(--font-family-secondary);
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
 }
 
 .subtitle-blue {
-  font-family: var(--color-secondary);
+  font-family: var(--font-family-secondary);
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
@@ -729,7 +728,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-family: var(--color-secondary);
+  font-family: var(--font-family-secondary);
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
@@ -740,7 +739,7 @@
   max-width: 300px;
   width: 100%;
   margin: 20px 5px 10px 0;
-  font-family: var(--color-secondary);
+  font-family: var(--font-family-secondary);
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
@@ -1050,7 +1049,7 @@ background-color: var(--color-hover);
 /* .participants__title {
   margin: 0;
   display: inline;
-font-family: var(--color-primary);
+  font-family: var(--font-family-primary); 
   font-size: 54px;
   line-height: 64.8px;
   font-weight: 400;
@@ -1091,7 +1090,7 @@ font-family: var(--color-primary);
 .cards__title {
   margin: 0 0 5px 0;
   text-align: center;
-  font-family: var(--color-secondary);
+  font-family: var(--font-family-secondary);
   font-size: 24px;
   line-height: 28.8px;
   font-weight: 600;
@@ -1134,10 +1133,17 @@ font-family: var(--color-primary);
 
 .slider__page {
   margin: 0;
-  font-family: var(--color-secondary);
+  font-family: var(--font-family-secondary);
   font-size: 16px;
   line-height: 19.2px;
   font-weight: 400;
+  opacity: 60%;
+}
+
+.slider__page.active {
+  opacity: 100%;
+  /* color: var(--color-primary); */
+  /* color: var(--color-attention); */
 }
 
 .slider__dots {
@@ -1234,7 +1240,7 @@ font-family: var(--color-primary);
 
 .footer__text {
   margin: 0;
-  font-family: var(--color-secondary);
+  font-family: var(--font-family-secondary);
   font-size: 16px;
   line-height: 19.2px;
   font-weight: 400;
