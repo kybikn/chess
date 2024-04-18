@@ -4,33 +4,30 @@
     right: 5px;
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 1340px) {
     .stages__img {
-        position: absolute;
+        width: 335px;
+        height: 220px;
         top: 60px;
-        right: 50px;
+        right: 0;
     }
 }
 
-@media (max-width: 1280px) {
-    .stages__img {
-        top: 90px;
-        right: 45px;
-    }
-}
-
-@media (max-width: 960px) {
+@media (max-width: 680px) {
     .stages__img {
         top: 150px;
-        right: 45px;
+    }
+}
+
+@media (max-width: 520px) {
+    .stages__img {
+        top: 220px;
     }
 }
 
 @media (max-width: 375px) {
     .stages__img {
-        width: 335px;
-        height: 225px;
-        top: 246px;
+        top: 255px;
         right: 10px;
     }
 }
