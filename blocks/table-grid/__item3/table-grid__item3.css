@@ -1,0 +1,15 @@
+.table-grid__item3 {
+    grid-row: span 2;
+}
+
+@media (max-width: 960px) {
+    .table-grid__item3 {
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 375px) {
+    .table-grid__item3 {
+        grid-row: span 2;
+    }
+}

@@ -1,0 +1,14 @@
+.cards {
+    margin: 62px 0 0 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+@media (max-width: 375px) {
+    .cards {
+        margin: 40px 0 0 0;
+    }
+}

@@ -1,0 +1,22 @@
+.ellipse {
+    position: absolute;
+    z-index: 1;
+    bottom: 80px;
+    right: 310px;
+    background-blend-mode: color-burn;
+}
+
+@media (max-width: 1680px) {
+    .ellipse {
+        right: 35px;
+    }
+}
+
+@media (max-width: 375px) {
+    .ellipse {
+        width: 295px;
+        height: 285px;
+        bottom: 66px;
+        right: 50px;
+    }
+}

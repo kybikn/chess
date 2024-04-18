@@ -1,0 +1,15 @@
+.stages__subtitle {
+    width: 280px;
+    margin: 0;
+    padding: 0 0 0 10px;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 375px) {
+    .stages__subtitle {
+        width: 335px;
+        padding: 0;
+        display: block;
+    }
+}

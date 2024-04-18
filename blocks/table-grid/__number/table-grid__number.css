@@ -1,0 +1,23 @@
+.table-grid__number {
+    width: 11px;
+    height: 14px;
+    margin: 20px 15px 20px 20px;
+    padding: 11px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-family: var(--font-family-secondary);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    background-color: var(--color-secondary);
+}
+
+
+@media (max-width: 375px) {
+    .table-grid__number {
+        margin: 60px 15px 20px 20px;
+        padding: 11px 13px;
+    }
+}

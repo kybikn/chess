@@ -1,0 +1,9 @@
+.header__btn_left {
+    color: var(--color-secondary);
+    background-color: var(--color-button);
+}
+
+.header__btn_left:hover {
+    color: var(--color-button);
+    background-color: var(--color-hover);
+}

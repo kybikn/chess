@@ -1,0 +1,5 @@
+@media (max-width: 375px) {
+    .table__title_nowrap {
+        width: 152px;
+    }
+}

@@ -1,0 +1,11 @@
+.slider__pages {
+    margin: 0 14px;
+    display: flex;
+    gap: 5px;
+}
+
+@media (max-width: 680px) {
+    .slider__pages {
+        gap: 2px;
+    }
+}

@@ -1,0 +1,19 @@
+.tournament__block-table {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 960px) {
+    .tournament__block-table {
+        padding: 0 60px;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tournament__block-table {
+        padding: 0;
+    }
+}

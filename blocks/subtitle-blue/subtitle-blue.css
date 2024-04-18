@@ -1,0 +1,14 @@
+.subtitle-blue {
+    font-family: var(--font-family-secondary);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--color-additional);
+}
+
+@media (max-width: 375px) {
+    .subtitle-blue {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+}

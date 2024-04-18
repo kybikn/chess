@@ -1,0 +1,5 @@
+@media (max-width: 375px) {
+    .table__row_nowrap {
+        flex-direction: row;
+    }
+}

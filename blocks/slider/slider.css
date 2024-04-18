@@ -1,0 +1,15 @@
+.slider {
+    margin: 10px 0 0 0;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 680px) {
+    .slider {
+        width: 129px;
+        margin: 38px auto 0;
+        order: 3;
+    }
+}

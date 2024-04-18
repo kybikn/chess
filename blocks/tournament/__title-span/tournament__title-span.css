@@ -1,0 +1,11 @@
+.tournament__title-span {
+    font-weight: 700;
+    color: var(--color-attention);
+}
+
+
+@media (max-width: 375px) {
+    .tournament__title-span {
+        letter-spacing: 0.3px;
+    }
+}

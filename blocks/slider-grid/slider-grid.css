@@ -1,0 +1,15 @@
+.slider-grid {
+    display: none;
+}
+
+
+@media (max-width: 375px) {
+    .slider-grid {
+        width: 178px;
+        height: 36px;
+        margin: 25px auto 0;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+}

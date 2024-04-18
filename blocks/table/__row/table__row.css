@@ -1,0 +1,11 @@
+@media (max-width: 680px) {
+    .table__row {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid #D0D0D0;
+    }
+
+    .table__row:last-of-type {
+        border: 0;
+    }
+}

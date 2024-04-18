@@ -1,0 +1,17 @@
+.stages__title-box {
+    max-width: 806px;
+    width: 100%;
+    margin: 0 0 55px 0;
+}
+
+@media (max-width: 680px) {
+    .stages__title-box {
+        margin: 0 0 80px 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .stages__title-box {
+        margin: 0 0 150px 0;
+    }
+}

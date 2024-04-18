@@ -1,0 +1,22 @@
+.city {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    right: 135px;
+}
+
+@media (max-width: 1680px) {
+    .city {
+        right: -140px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .city {
+        width: 885px;
+        height: 247px;
+        right: -110px;
+        bottom: -8px;
+    }
+}

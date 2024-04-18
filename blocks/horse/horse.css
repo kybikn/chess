@@ -1,0 +1,22 @@
+.horse {
+    position: absolute;
+    z-index: 6;
+    bottom: 0;
+    right: 610px;
+}
+
+@media (max-width: 1680px) {
+    .horse {
+        right: 335px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .horse {
+        width: 100px;
+        height: 115px;
+        right: 130px;
+        bottom: 0;
+    }
+}

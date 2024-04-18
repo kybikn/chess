@@ -1,0 +1,19 @@
+.pawn {
+    position: absolute;
+    z-index: 6;
+    bottom: 20px;
+    right: 320px;
+}
+
+@media (max-width: 1680px) {
+    .pawn {
+        right: 45px;
+    }
+}
+
+@media (max-width: 375px) {
+    .pawn {
+        right: -100px;
+        bottom: 0;
+    }
+}

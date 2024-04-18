@@ -1,0 +1,15 @@
+.cards__image {
+    height: 320px;
+    margin: 0 0 30px;
+    background-image: url(../../../images/bg.png);
+    border-radius: 50%;
+    background-color: var(--color-background);
+    background-blend-mode: color-burn, color;
+}
+
+@media (max-width: 768px) {
+    .cards__image {
+        width: 244px;
+        height: 244px;
+    }
+}

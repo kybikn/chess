@@ -1,0 +1,14 @@
+.btn-arrow {
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.btn-arrow:hover {
+    background-color: var(--color-hover);
+}

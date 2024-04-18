@@ -1,0 +1,5 @@
+@media (max-width: 960px) {
+    .tournament__title_center {
+        order: 3;
+    }
+}

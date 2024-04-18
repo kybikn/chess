@@ -1,0 +1,21 @@
+.king {
+    position: absolute;
+    z-index: 3;
+    bottom: 165px;
+    right: 780px;
+}
+
+@media (max-width: 1680px) {
+    .king {
+        right: 510px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .king {
+        height: 117px;
+        right: 255px;
+        bottom: 115px;
+    }
+}

@@ -1,0 +1,16 @@
+.header__btn_right {
+    color: var(--color-button);
+    background-color: transparent;
+    border: 2px solid var(--color-button);
+}
+
+.header__btn_right:hover {
+    color: var(--color-secondary);
+    background-color: var(--color-button);
+}
+
+@media (max-width: 960px) {
+    .header__btn_right {
+        background-color: var(--color-secondary);
+    }
+}

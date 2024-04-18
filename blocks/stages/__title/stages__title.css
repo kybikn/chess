@@ -1,0 +1,6 @@
+@media (max-width: 375px) {
+    .stages__title {
+        margin: 0 0 13px 0;
+        display: block;
+    }
+}

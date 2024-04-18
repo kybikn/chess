@@ -1,0 +1,9 @@
+.table__column {
+    border: 2px solid #D0D0D0;
+}
+
+@media (max-width: 680px) {
+    .table__column {
+        border: 0;
+    }
+}

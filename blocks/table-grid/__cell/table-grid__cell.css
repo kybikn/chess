@@ -1,0 +1,14 @@
+.table-grid__cell {
+    display: flex;
+    background-image: url(../../../images/bg.png);
+    background-color: var(--color-background);
+    background-blend-mode: color-burn, color;
+    list-style: none;
+}
+
+
+@media (max-width: 375px) {
+    .table-grid__cell {
+        width: 335px;
+    }
+}

@@ -1,0 +1,5 @@
+@media (max-width: 375px) {
+    .tournament__table {
+        padding: 0 0 0 8px;
+    }
+}

@@ -1,0 +1,10 @@
+.cards__item {
+    display: none;
+}
+
+.active-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

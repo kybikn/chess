@@ -1,0 +1,13 @@
+.table__title {
+    width: 300px;
+    padding: 15px 0;
+    opacity: 70%;
+}
+
+
+@media (max-width: 375px) {
+    .table__title {
+        width: 290px;
+        padding: 15px 0 12px;
+    }
+}

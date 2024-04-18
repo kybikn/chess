@@ -1,0 +1,18 @@
+.header__btn {
+    max-width: 165px;
+    padding: 13px 49px;
+    border-radius: 66px;
+}
+
+@media (max-width: 960px) {
+    .header__btn {
+        padding: 7px 30px;
+    }
+}
+
+@media (max-width: 680px) {
+    .header__btn {
+        max-width: 249px;
+        padding: 13px 43px;
+    }
+}

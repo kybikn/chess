@@ -1,0 +1,22 @@
+.border {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 155px;
+}
+
+@media (max-width: 1680px) {
+    .border {
+        right: -120px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .border {
+        width: 885px;
+        height: 247px;
+        right: -100px;
+        bottom: -4px;
+    }
+}

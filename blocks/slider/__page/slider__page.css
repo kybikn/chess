@@ -1,0 +1,12 @@
+.slider__page {
+    margin: 0;
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 400;
+    opacity: 60%;
+}
+
+.active-btn {
+    opacity: 100%;
+}

@@ -1,0 +1,18 @@
+.tournament {
+    padding: 80px 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .tournament {
+        padding: 60px 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    .tournament {
+        padding: 50px 10px;
+    }
+}

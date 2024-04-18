@@ -1,0 +1,23 @@
+.title {
+    margin: 0;
+    display: inline;
+    font-family: var(--font-family-primary);
+    font-size: 54px;
+    line-height: 64.8px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media (max-width: 960px) {
+    .title {
+        font-size: 42px;
+        line-height: 39.6px;
+    }
+}
+
+@media (max-width: 680px) {
+    .title {
+        font-size: 36px;
+        line-height: 39.6px;
+    }
+}

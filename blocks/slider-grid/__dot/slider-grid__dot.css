@@ -1,0 +1,14 @@
+@media (max-width: 375px) {
+    .slider-grid__dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #D9D9D9;
+        cursor: pointer;
+        transition: 0.8s;
+    }
+
+    .active-dot {
+        background-color: var(--color-primary);
+    }
+}

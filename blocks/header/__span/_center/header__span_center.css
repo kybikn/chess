@@ -1,0 +1,9 @@
+.header__span_center {
+    margin: 0 0 0 90px;
+}
+
+@media (max-width: 680px) {
+    .header__span_center {
+        margin: 0 0 0 64px;
+    }
+}

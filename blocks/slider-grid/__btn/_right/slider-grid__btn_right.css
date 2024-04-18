@@ -1,0 +1,11 @@
+@media (max-width: 375px) {
+    .slider-grid__btn_right::before {
+        content: "";
+        background: url(../../../../images/arrow-right.svg) no-repeat center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

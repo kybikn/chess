@@ -1,0 +1,13 @@
+.tournament__img {
+    margin: -30px 0 0 35px;
+    float: right;
+}
+
+@media (max-width: 960px) {
+    .tournament__img {
+        width: 335px;
+        height: 212px;
+        margin: 25px auto 23px auto;
+        order: 2;
+    }
+}

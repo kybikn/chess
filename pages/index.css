@@ -1,3 +1,111 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
-@import url(../css/variables.css);
+@import url(../vendor/variables.css);
+
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__content/header__content.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__span/header__span.css);
+@import url(../blocks/header/__span/_right/header__span_right.css);
+@import url(../blocks/header/__span/_center/header__span_center.css);
+@import url(../blocks/header/__text/header__text.css);
+@import url(../blocks/header/__btns/header__btns.css);
+@import url(../blocks/header/__btn/header__btn.css);
+@import url(../blocks/header/__btn/_left/header__btn_left.css);
+@import url(../blocks/header/__btn/_right/header__btn_right.css);
+
+@import url(../blocks/logo/logo.css);
+
+@import url(../blocks/title/title.css);
+
+@import url(../blocks/subtitle/subtitle.css);
+
+@import url(../blocks//subtitle-blue/subtitle-blue.css);
+
+@import url(../blocks/btn/btn.css);
+@import url(../blocks/btn-arrow/btn-arrow.css);
+
+@import url(../blocks/ellipse/ellipse.css);
+@import url(../blocks/letters/letters.css);
+@import url(../blocks/king/king.css);
+@import url(../blocks/queen/queen.css);
+@import url(../blocks/city/city.css);
+@import url(../blocks/border/border.css);
+@import url(../blocks/horse/horse.css);
+@import url(../blocks/pawn/pawn.css);
+
+@import url(../blocks/run/run.css);
+@import url(../blocks/run/__text/run__text.css);
+
+@import url(../blocks/tournament/tournament.css);
+@import url(../blocks/tournament/__block/tournament__block.css);
+@import url(../blocks/tournament/__img/tournament__img.css);
+@import url(../blocks/tournament/__img-table/tournament__img-table.css);
+@import url(../blocks/tournament/__title/tournament__title.css);
+@import url(../blocks/tournament/__title/_top/tournament__title_top.css);
+@import url(../blocks/tournament/__title/_center/tournament__title_center.css);
+@import url(../blocks/tournament/__title/_bottom/tournament__title_bottom.css);
+@import url(../blocks/tournament/__title-span/tournament__title-span.css);
+@import url(../blocks/tournament/__block-table/tournament__block-table.css);
+@import url(../blocks/tournament/__table/tournament__table.css);
+@import url(../blocks/tournament/__title-table/tournament__title-table.css);
+@import url(../blocks/tournament/__text/tournament__text.css);
+
+@import url(../blocks/table/table.css);
+@import url(../blocks/table/__row/table__row.css);
+@import url(../blocks/table/__row/_nowrap/table__row_nowrap.css);
+@import url(../blocks/table/__box/table__box.css);
+@import url(../blocks/table/__column/table__column.css);
+@import url(../blocks/table/__title/table__title.css);
+@import url(../blocks/table/__title/_nowrap/table__title_nowrap.css);
+@import url(../blocks/table/__text/table__text.css);
+@import url(../blocks/table/__text/_nowrap/table__text_nowrap.css);
+@import url(../blocks/table/__text-del/table__text-del.css);
+@import url(../blocks/table/__text-span/table__text-span.css);
+
+@import url(../blocks/table-grid/table-grid.css);
+@import url(../blocks/table-grid/__wrapper/table-grid__wrapper.css);
+@import url(../blocks/table-grid/__cell/table-grid__cell.css);
+@import url(../blocks/table-grid/__number/table-grid__number.css);
+@import url(../blocks/table-grid/__number/_position/table-grid__number_position.css);
+@import url(../blocks/table-grid/__text/table-grid__text.css);
+@import url(../blocks/table-grid/__text/_width/table-grid__text_width.css);
+@import url(../blocks/table-grid/__text/_position/table-grid__text_position.css);
+@import url(../blocks/table-grid/__item3/table-grid__item3.css);
+@import url(../blocks/table-grid/__item6/table-grid__item6.css);
+@import url(../blocks/table-grid/__item7/table-grid__item7.css);
+
+@import url(../blocks/stages/stages.css);
+@import url(../blocks/stages/__title-box/stages__title-box.css);
+@import url(../blocks/stages/__title/stages__title.css);
+@import url(../blocks/stages/__subtitle/stages__subtitle.css);
+@import url(../blocks/stages/__img/stages__img.css);
+
+@import url(../blocks/slider/slider.css);
+@import url(../blocks/slider/__pages/slider__pages.css);
+@import url(../blocks/slider/__page/slider__page.css);
+@import url(../blocks/slider/__dots/slider__dots.css);
+@import url(../blocks/slider/__btn/slider__btn.css);
+@import url(../blocks/slider/__btn/_left/slider__btn_left.css);
+@import url(../blocks/slider/__btn/_right/slider__btn_right.css);
+
+@import url(../blocks/slider-grid/slider-grid.css);
+@import url(../blocks/slider-grid/__dots/slider-grid__dots.css);
+@import url(../blocks/slider-grid/__dot/slider-grid__dot.css);
+@import url(../blocks/slider-grid/__btn/slider-grid__btn.css);
+@import url(../blocks/slider-grid/__btn/_left/slider-grid__btn_left.css);
+@import url(../blocks/slider-grid/__btn/_right/slider-grid__btn_right.css);
+
+@import url(../blocks/participants/participants.css);
+
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__item/cards__item.css);
+@import url(../blocks/cards/__image/cards__image.css);
+@import url(../blocks/cards/__title/cards__title.css);
+@import url(../blocks/cards/__text/cards__text.css);
+@import url(../blocks/cards/__btn/cards__btn.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__text/footer__text.css);

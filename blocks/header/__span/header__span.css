@@ -1,0 +1,21 @@
+.header__span {
+    font-family: var(--font-family-primary);
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media (max-width: 960px) {
+    .header__span {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 680px) {
+    .header__span {
+        font-size: 36px;
+        line-height: 39.6px;
+    }
+}

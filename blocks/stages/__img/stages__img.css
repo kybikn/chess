@@ -1,0 +1,36 @@
+.stages__img {
+    position: absolute;
+    top: 430px;
+    right: 5px;
+}
+
+@media (max-width: 1330px) {
+    .stages__img {
+        position: absolute;
+        top: 60px;
+        right: 50px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .stages__img {
+        top: 90px;
+        right: 45px;
+    }
+}
+
+@media (max-width: 960px) {
+    .stages__img {
+        top: 150px;
+        right: 45px;
+    }
+}
+
+@media (max-width: 375px) {
+    .stages__img {
+        width: 335px;
+        height: 225px;
+        top: 246px;
+        right: 10px;
+    }
+}

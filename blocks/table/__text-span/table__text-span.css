@@ -1,0 +1,10 @@
+.table__text-span {
+    padding: 0 10px 0 0;
+    color: var(--color-primary);
+}
+
+@media (max-width: 375px) {
+    .table__text-span {
+        padding: 0 7px 0 0;
+    }
+}

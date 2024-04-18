@@ -1,0 +1,12 @@
+.header__btns {
+    display: flex;
+    gap: 15px;
+    z-index: 7;
+}
+
+@media (max-width: 680px) {
+    .header__btns {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

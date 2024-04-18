@@ -1,0 +1,21 @@
+.cards__btn {
+    max-width: 113px;
+    padding: 7px 10px;
+    border-radius: 62px;
+    border: 2px solid var(--color-additional);
+    background-color: transparent;
+    color: var(--color-additional);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.cards__btn:hover {
+    color: var(--color-secondary);
+    background-color: var(--color-additional);
+}
+
+@media (max-width: 375px) {
+    .cards__btn {
+        line-height: 19.2px;
+    }
+}

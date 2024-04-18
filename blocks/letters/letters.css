@@ -1,0 +1,22 @@
+.letters {
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    right: 250px;
+    mix-blend-mode: darken;
+}
+
+@media (max-width: 1680px) {
+    .letters {
+        right: -25px;
+    }
+}
+
+@media (max-width: 375px) {
+    .letters {
+        width: 345px;
+        height: 310px;
+        right: 25px;
+        bottom: 39px;
+    }
+}

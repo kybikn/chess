@@ -1,0 +1,12 @@
+@media (max-width: 375px) {
+    .slider-grid__btn {
+        width: 36px;
+        height: 36px;
+        opacity: 20%;
+        position: relative;
+    }
+
+    .active-btn {
+        opacity: 100%;
+    }
+}

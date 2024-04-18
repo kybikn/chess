@@ -98,30 +98,22 @@ function updateCardsOnScreen() {
 // отображение карточек
 function activeSlide(n) {
     for (let slide of slides) {
-        slide.classList.remove("active");
+        slide.classList.remove("active-item");
     }
-    slides[n].classList.add("active");
+    slides[n].classList.add("active-item");
     if ((cardsOnScreen > 1) && ((n + 1) < slides.length)) {
-        slides[n + 1].classList.add("active");
+        slides[n + 1].classList.add("active-item");
     }
     if ((cardsOnScreen > 2) && ((n + 2) < slides.length)) {
-        slides[n + 2].classList.add("active");
+        slides[n + 2].classList.add("active-item");
     }
-}
-
-// отображение точек
-function activeDot(n) {
-    for (let dot of dots) {
-        dot.classList.remove("active");
-    }
-    dots[n].classList.add("active");
 }
 
 // отображение страниц
 function activePage(n) {
     page = Math.ceil((n + 1) / cardsOnScreen);
     currentPage.innerText = (page);
-    currentPage.classList.add("active");
+    currentPage.classList.add("active-btn");
     const totalPagesNum = Math.ceil((slides.length) / cardsOnScreen);
     totalPages.innerText = totalPagesNum
 }
@@ -129,7 +121,6 @@ function activePage(n) {
 // обновляет ситуацию на экране
 function currentSlide(n) {
     activeSlide(n);
-    activeDot(n);
     activePage(n);
 }
 
@@ -178,6 +169,5 @@ function onResize() {
 btnNext.addEventListener("click", nextSlide);
 btnPrev.addEventListener("click", prevSlide);
 
-
-window.addEventListener("load", onLoad);
+document.addEventListener("DOMContentLoaded", onLoad);
 window.addEventListener("resize", onResize)

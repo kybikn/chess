@@ -1,0 +1,10 @@
+.tournament__text {
+    margin: 0;
+}
+
+
+@media (max-width: 375px) {
+    .tournament__text {
+        padding: 0 0 0 2px;
+    }
+}
