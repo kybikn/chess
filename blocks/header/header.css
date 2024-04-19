@@ -3,8 +3,6 @@
     max-height: 700px;
     height: 100vh;
     overflow: hidden;
-    background-image: url(../../images/bg.png);
-    background-blend-mode: color-burn, color;
     background-color: var(--color-background);
 }
 
