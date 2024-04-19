@@ -12,7 +12,16 @@
 .cards__btn:hover {
     color: var(--color-secondary);
     background-color: var(--color-additional);
+    box-shadow: 0 0 0 7px rgba(9, 206, 75, 0);
+    animation: pulse-blue 1.3s;
 }
+
+@keyframes pulse-blue {
+    0% {
+        box-shadow: 0 0 0 0 var(--color-additional);
+    }
+}
+
 
 @media (max-width: 375px) {
     .cards__btn {

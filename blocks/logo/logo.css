@@ -1,6 +1,7 @@
 .logo {
     margin: 0 0 58px 0;
     z-index: 7;
+    cursor: pointer;
 }
 
 @media (max-width: 375px) {

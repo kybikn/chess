@@ -5,6 +5,12 @@
     border-radius: 50%;
     background-color: var(--color-background);
     background-blend-mode: color-burn, color;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cards__image:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {

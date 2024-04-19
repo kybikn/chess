@@ -5,12 +5,29 @@
     right: 610px;
 }
 
+.horse:hover {
+    animation: move-horse 5s linear;
+}
+
+@keyframes move-horse {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-150px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 @media (max-width: 1680px) {
     .horse {
         right: 335px;
     }
 }
-
 
 @media (max-width: 375px) {
     .horse {

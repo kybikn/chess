@@ -6,4 +6,12 @@
 .header__btn_left:hover {
     color: var(--color-button);
     background-color: var(--color-hover);
+    box-shadow: 0 0 0 10px rgba(9, 206, 75, 0);
+    animation: pulse-red 1.3s;
+}
+
+@keyframes pulse-red {
+    0% {
+        box-shadow: 0 0 0 0 var(--color-attention);
+    }
 }

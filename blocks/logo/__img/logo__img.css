@@ -1,3 +1,17 @@
+.logo__img:hover {
+    animation: 5s linear infinite rotate;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
 @media (max-width: 375px) {
     .logo__img {
         width: 213px;

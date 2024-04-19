@@ -7,6 +7,14 @@
 .header__btn_right:hover {
     color: var(--color-secondary);
     background-color: var(--color-button);
+    box-shadow: 0 0 0 10px rgba(9, 206, 75, 0);
+    animation: pulse-red 1.3s;
+}
+
+@keyframes pulse-red {
+    0% {
+        box-shadow: 0 0 0 0 var(--color-attention);
+    }
 }
 
 @media (max-width: 960px) {

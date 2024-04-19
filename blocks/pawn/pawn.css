@@ -5,6 +5,24 @@
     right: 320px;
 }
 
+.pawn:hover {
+    animation: move-pawn 5s linear;
+}
+
+@keyframes move-pawn {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-120px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 @media (max-width: 1680px) {
     .pawn {
         right: 45px;
