@@ -157,6 +157,7 @@ dots.forEach((item, indexDot) => {
 function onLoad() {
     updateCardsOnScreen();
     currentSlide(0);
+    setInterval(nextSlide, 4000);
     startGridSlides();
 }
 
