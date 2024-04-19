@@ -42,6 +42,7 @@ function updateBtns(index) {
 }
 
 function startGridSlides() {
+    slider.style.left = -offset + 'px';
     updateDots(dotIndex);
     updateBtns(dotIndex);
 }
