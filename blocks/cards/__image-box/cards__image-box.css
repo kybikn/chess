@@ -1,0 +1,13 @@
+.cards__image-box {
+    width: 320px;
+    height: 320px;
+    margin: 0 0 30px 0;
+}
+
+@media (max-width: 768px) {
+    .cards__image-box {
+        width: 245px;
+        height: 245px;
+        margin-bottom: 28px;
+    }
+}

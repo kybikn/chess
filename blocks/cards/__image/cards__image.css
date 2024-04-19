@@ -1,6 +1,7 @@
 .cards__image {
-    height: 320px;
-    margin: 0 0 30px;
+    height: 300px;
+    width: 310px;
+    padding: 20px 0 0 0;
     background-image: url(../../../images/bg.png);
     border-radius: 50%;
     background-color: var(--color-background);
@@ -15,7 +16,8 @@
 
 @media (max-width: 768px) {
     .cards__image {
-        width: 244px;
-        height: 244px;
+        padding-top: 13px;
+        width: 245px;
+        height: 230px;
     }
 }
