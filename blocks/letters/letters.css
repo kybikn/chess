@@ -3,7 +3,7 @@
     z-index: 1;
     bottom: 20px;
     right: 250px;
-    mix-blend-mode: darken;
+    mix-blend-mode: overlay;
 }
 
 @media (max-width: 1680px) {

@@ -3,7 +3,6 @@
     z-index: 1;
     bottom: 80px;
     right: 310px;
-    background-blend-mode: color-burn;
 }
 
 @media (max-width: 1680px) {
